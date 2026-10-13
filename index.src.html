@@ -84,39 +84,49 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 /* hero */
-.hero{position:relative;overflow:hidden;background:#F4F1EA;min-height:640px;display:flex;align-items:center}
+.hero{position:relative;overflow:hidden;background:#F4F1EA;min-height:600px;display:flex;align-items:center}
 .hero .bg{position:absolute;inset:0;background:url(images/hero.jpg) no-repeat center 30%;background-size:cover;transform:scaleX(-1)}
-.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.94) 42%,rgba(255,255,255,.55) 62%,rgba(255,255,255,0) 100%)}
-.hero .wrap{position:relative;z-index:2;padding:clamp(56px,7vw,96px) 0}
-.hero .pre{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.2em;margin-bottom:14px}
-.hero h1{font-size:clamp(28px,3.4vw,42px);line-height:1.45;white-space:nowrap}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.94) 40%,rgba(255,255,255,.55) 60%,rgba(255,255,255,0) 100%)}
+.hero .wrap{position:relative;z-index:2;padding:clamp(72px,9vw,120px) 0}
+.hero .pre{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.2em;margin-bottom:16px}
+.hero h1{font-size:clamp(32px,4.2vw,52px);line-height:1.4;white-space:nowrap}
 .hero h1 .l{display:block}
-.hero .sub{margin-top:16px;font-size:16px;color:var(--ink-2);max-width:520px}
-.handoff{display:grid;grid-template-columns:1fr 64px 1fr;align-items:stretch;margin-top:30px;max-width:720px}
-.hbox{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:8px;padding:20px 22px;backdrop-filter:blur(4px)}
-.hbox .t{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;color:var(--ink-2);margin-bottom:12px}
-.hbox .t .ms{font-size:18px}
-.hbox.you{border:1.5px solid var(--accent);background:linear-gradient(160deg,#FFFDF8,#FBF3E2);box-shadow:0 10px 30px rgba(184,134,43,.18)}
-.hbox.you .t{color:var(--accent-dk)}
-.hbox.you .t b{margin-left:auto;font-size:11px;font-weight:700;color:#fff;background:var(--accent);padding:2px 8px;border-radius:3px;letter-spacing:.1em}
-.chores li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink);padding:7px 0;border-bottom:1px dashed var(--line);white-space:nowrap}
-.chores li:last-child{border-bottom:0}
-.chores li .ms{font-size:20px;color:var(--green)}
-.chores li em{margin-left:auto;font-style:normal;font-size:11px;font-weight:700;color:#fff;background:var(--green);padding:2px 8px;border-radius:3px;letter-spacing:.08em;white-space:nowrap}
-.you3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;height:calc(100% - 30px);align-content:center}
-.you3 li{text-align:center;padding:10px 4px}
-.you3 .ic{width:54px;height:54px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto}
-.you3 .ms{font-size:26px;color:var(--accent)}
-.you3 b{display:block;font-family:var(--serif);font-size:19px;font-weight:600;margin-top:6px;white-space:nowrap}
-.you3 span{display:block;font-size:11.5px;color:var(--ink-2);margin-top:2px;white-space:nowrap}
-.harrow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--accent)}
-.harrow .ms{font-size:30px}
-.harrow span{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--ink-2);white-space:nowrap}
-.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.facts{display:flex;flex-wrap:wrap;margin-top:26px}
+.hero .sub{margin-top:22px;font-size:16.5px;color:var(--ink-2);max-width:520px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.facts{display:flex;flex-wrap:wrap;margin-top:28px}
 .facts li{display:flex;align-items:center;gap:8px;padding:8px 20px 8px 0;margin-right:20px;font-size:13px;font-weight:500;letter-spacing:.04em;border-right:1px solid var(--line);white-space:nowrap}
 .facts li .ms{font-size:18px;color:var(--accent)}
 .facts li:last-child{border-right:0;margin-right:0}
+
+/* handoff */
+.handoff-sec{background:#fff;padding:clamp(56px,7vw,88px) 0 clamp(64px,8vw,100px)}
+.handoff-k{text-align:center;font-family:var(--serif);font-size:clamp(18px,2.2vw,24px);font-weight:600;letter-spacing:.06em;margin-bottom:34px}
+.handoff{display:grid;grid-template-columns:1fr 96px 1fr;align-items:stretch}
+.hcard{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:26px 28px 28px;box-shadow:0 14px 36px rgba(28,36,48,.07);display:flex;flex-direction:column}
+.hcard.you{border-color:var(--accent);background:linear-gradient(160deg,#FFFDF8,#FBF3E2);box-shadow:0 14px 36px rgba(184,134,43,.18)}
+.hhead{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:17px;font-weight:600;letter-spacing:.06em;padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:10px;white-space:nowrap}
+.hcard.you .hhead{border-bottom-color:rgba(184,134,43,.3)}
+.hic{width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:none;background:var(--navy);color:#fff}
+.hic .ms{font-size:20px}
+.hcard.you .hic{background:var(--accent)}
+.hhead b{margin-left:auto;font-family:var(--sans);font-size:11px;font-weight:700;color:#fff;background:var(--accent);padding:3px 10px;border-radius:3px;letter-spacing:.1em}
+.chores li{display:flex;align-items:center;gap:14px;padding:10px 0;border-bottom:1px solid #F0ECE4;white-space:nowrap}
+.chores li:last-child{border-bottom:0}
+.cic{width:36px;height:36px;border-radius:50%;background:var(--bg-2);color:var(--ink-2);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.cic .ms{font-size:19px}
+.chores .ct{font-size:15px;font-weight:500;color:var(--ink)}
+.chores li em{margin-left:auto;font-style:normal;font-size:11.5px;font-weight:700;color:var(--green);letter-spacing:.12em;white-space:nowrap;display:inline-flex;align-items:center;gap:4px}
+.chores li em::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--green);-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>") center/contain no-repeat}
+.you3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;flex:1;align-content:center;padding-top:10px}
+.you3 li{text-align:center;padding:10px 4px}
+.you3 .ic{width:60px;height:60px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 6px 16px rgba(184,134,43,.15)}
+.you3 .ms{font-size:28px;color:var(--accent)}
+.you3 b{display:block;font-family:var(--serif);font-size:21px;font-weight:600;margin-top:10px;white-space:nowrap}
+.you3 span{display:block;font-size:12px;color:var(--ink-2);margin-top:2px;white-space:nowrap}
+.harrow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.harrow .hic{background:#fff;border:1.5px solid var(--line);color:var(--accent);width:44px;height:44px}
+.harrow .hic .ms{font-size:22px}
+.harrow span:last-child{font-size:11.5px;font-weight:700;letter-spacing:.14em;color:var(--ink-2);white-space:nowrap}
 
 /* numbers */
 .numbers{background:var(--navy);color:#fff}
@@ -183,29 +193,24 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .sec.alt .card{border-color:transparent}
 
 /* counselors */
-.lead-member{background:#fff;border:1px solid var(--line);border-radius:var(--radius);display:grid;grid-template-columns:380px 1fr;overflow:hidden}
-.lead-member .img{aspect-ratio:auto;min-height:100%;border-radius:0}
-.lead-member .body{padding:38px 42px}
-.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--accent);border-radius:3px;padding:4px 10px;margin-bottom:12px}
-.tag.sub{color:var(--ink-2);background:transparent;border:1px solid var(--line)}
-.lead-member h3,.sub-member h3{font-size:26px;line-height:1.3}
-.kana{font-size:11.5px;color:var(--ink-2);letter-spacing:.14em;margin-bottom:14px}
-.lead-member .msg{font-family:var(--serif);font-size:18px;color:var(--accent-dk);margin:4px 0 14px;letter-spacing:.04em}
-.lead-member p,.sub-member p{font-size:14.5px;color:var(--ink-2);margin-bottom:12px}
-.exp{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 20px}
-.exp div{background:var(--bg-2);border-radius:8px;padding:16px 14px;text-align:center}
-.exp .ms{font-size:28px;color:var(--accent);margin-bottom:6px}
-.exp b{display:block;font-size:13.5px;line-height:1.5;margin-bottom:4px}
-.exp span{display:block;font-size:12px;color:var(--ink-2);line-height:1.6}
-.lead-member ul li,.sub-member ul li{position:relative;padding-left:18px;font-size:14px;color:var(--ink-2);margin-bottom:5px}
-.lead-member ul li::before,.sub-member ul li::before{content:"";position:absolute;left:0;top:.95em;width:8px;height:1px;background:var(--accent)}
-.sub-member{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:start}
-.sub-member .img{aspect-ratio:4/5;border-radius:4px}
-.sub-member h3{font-size:22px}
-.team-note{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.team-note li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;align-items:center;gap:12px;font-size:14px}
-.team-note li .ms{color:var(--accent);font-size:22px;flex:none}
-
+.team{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.member{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.member .img{aspect-ratio:5/4;border-radius:0}
+.member .img img{object-position:center 20%}
+.member .body{padding:30px 30px 32px;display:flex;flex-direction:column;flex:1}
+.tag{display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--accent);border-radius:3px;padding:4px 10px;margin-bottom:12px}
+.tag.sub{color:var(--ink);background:transparent;border:1px solid var(--ink)}
+.member h3{font-size:26px;line-height:1.3}
+.kana{font-size:12px;color:var(--ink-2);letter-spacing:.1em;margin-bottom:12px}
+.member .msg{font-family:var(--serif);font-size:17px;color:var(--accent-dk);margin:2px 0 12px;letter-spacing:.04em}
+.member p{font-size:14.5px;color:var(--ink-2);margin-bottom:12px}
+.exp{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 18px}
+.exp div{background:var(--bg-2);border-radius:8px;padding:14px 10px;text-align:center}
+.exp .ms{font-size:26px;color:var(--accent);margin-bottom:6px}
+.exp b{display:block;font-size:13px;line-height:1.5;margin-bottom:4px}
+.exp span{display:block;font-size:11.5px;color:var(--ink-2);line-height:1.6}
+.member ul li{position:relative;padding-left:18px;font-size:14px;color:var(--ink-2);margin-bottom:5px}
+.member ul li::before{content:"";position:absolute;left:0;top:.95em;width:8px;height:1px;background:var(--accent)}
 /* plans */
 .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
 .plan{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px 30px;display:flex;flex-direction:column;position:relative}
@@ -313,16 +318,13 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 .sticky .btn{flex:1;padding:14px 10px;font-size:14px}
 
 @media (max-width:1100px){
-  .hero h1{font-size:clamp(26px,3vw,36px)}
+  .hero h1{font-size:clamp(28px,3.8vw,44px)}
 }
 @media (max-width:960px){
   .hero .bg{background-position:60% 30%}
-  .hero::before{background:linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.92) 70%,rgba(255,255,255,.7) 100%)}
-  .handoff{max-width:none}
+  .hero::before{background:linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.9) 60%,rgba(255,255,255,.6) 100%)}
   .g3,.plans,.reports,.team-note{grid-template-columns:1fr 1fr}
-  .lead-member{grid-template-columns:1fr}
-  .lead-member .img{aspect-ratio:4/3}
-  .exp{grid-template-columns:1fr}
+  .team{grid-template-columns:1fr}
   .tl-track{display:none}
   .tl ol{grid-template-columns:repeat(3,1fr);row-gap:28px}
   .area,.contact .wrap,.about-grid{grid-template-columns:1fr}
@@ -343,14 +345,15 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   .sticky{display:flex}
   footer .wrap{grid-template-columns:1fr}
   .hero{min-height:0}
-  .hero h1{font-size:clamp(23px,6.6vw,28px);white-space:normal}
+  .hero{min-height:0}
+  .hero h1{font-size:clamp(26px,7.4vw,32px);white-space:normal}
   .hero h1 .l{white-space:nowrap}
   .hero .cta .btn{width:100%}
   .handoff{grid-template-columns:1fr}
-  .harrow{flex-direction:row;padding:10px 0}
-  .harrow .ms{transform:rotate(90deg)}
-  .you3{height:auto}
-  .you3 b{font-size:17px}
+  .harrow{flex-direction:row;padding:14px 0}
+  .harrow .hic .ms{transform:rotate(90deg)}
+  .hcard{padding:20px}
+  .you3 b{font-size:18px}
   .facts li{padding:6px 12px 6px 0;margin-right:12px;font-size:12px}
   .numbers b{font-size:19px}.numbers span{font-size:11px;white-space:normal}.numbers div{padding:20px 10px}
   .cmp-head{display:none}
@@ -366,9 +369,8 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   .res .r2,.res .r3{white-space:normal}
   .about-grid > div{padding:26px 22px}
   .about-grid h3,.card h3,.plan h3,.tl h3{white-space:normal}
-  .sub-member{grid-template-columns:1fr;gap:18px;padding:20px}
-  .sub-member .img{max-width:160px}
-  .lead-member .body{padding:26px 22px}
+  .member .body{padding:22px 20px 26px}
+  .exp{grid-template-columns:1fr}
   .area ul li{grid-template-columns:32px 90px 1fr}
   h2 .l{white-space:normal;display:block}
 }
@@ -411,21 +413,36 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <p class="pre">宮崎県の20代・30代のための結婚相談所</p>
     <h1><span class="l">婚活の、しんどい作業は</span><span class="l">すべて仲人へ。</span></h1>
     <p class="sub">本気度の確認も、日程調整も、お断りの連絡も、ルーモが引き受けます。あなたは、お相手と向き合うことだけに集中してください。</p>
+    <div class="cta">
+      <a class="btn btn-line" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.74 2 10.3c0 2.63 1.5 4.97 3.85 6.5-.1.9-.6 3.1-.68 3.56-.1.6.22.6.47.44.2-.13 3.1-2.1 4.36-2.95.65.1 1.32.15 2 .15 5.52 0 10-3.74 10-8.3S17.52 2 12 2z"/></svg>LINEで無料相談を予約</a>
+      <a class="btn btn-ghost" href="#handoff">どういうこと？</a>
+    </div>
+    <ul class="facts">
+      <li><span class="ms">schedule</span>無料相談 60分</li>
+      <li><span class="ms">nights_stay</span>平日夜・土日対応</li>
+      <li><span class="ms">block</span>当日のご入会判断は不要</li>
+    </ul>
+  </div>
+</section>
 
+<!-- HANDOFF -->
+<section class="handoff-sec" id="handoff">
+  <div class="wrap">
+    <p class="handoff-k">つまり、こういうことです。</p>
     <div class="handoff">
-      <div class="hbox">
-        <div class="t"><span class="ms">volunteer_activism</span>仲人が引き受けます</div>
+      <div class="hcard">
+        <div class="hhead"><span class="hic"><span class="ms">volunteer_activism</span></span><span>仲人が引き受けます</span></div>
         <ul class="chores">
-          <li><span class="ms">task_alt</span>相手の本気度の確認<em>仲人が代行</em></li>
-          <li><span class="ms">task_alt</span>プロフィールの作成<em>仲人が代行</em></li>
-          <li><span class="ms">task_alt</span>日程とお店の調整<em>仲人が代行</em></li>
-          <li><span class="ms">task_alt</span>お断りの連絡<em>仲人が代行</em></li>
-          <li><span class="ms">task_alt</span>迷ったときの判断<em>仲人と相談</em></li>
+          <li><span class="cic"><span class="ms">fact_check</span></span><span class="ct">相手の本気度の確認</span><em>代行</em></li>
+          <li><span class="cic"><span class="ms">edit_note</span></span><span class="ct">プロフィールの作成</span><em>代行</em></li>
+          <li><span class="cic"><span class="ms">calendar_month</span></span><span class="ct">日程とお店の調整</span><em>代行</em></li>
+          <li><span class="cic"><span class="ms">mail</span></span><span class="ct">お断りの連絡</span><em>代行</em></li>
+          <li><span class="cic"><span class="ms">psychology</span></span><span class="ct">迷ったときの判断</span><em>相談</em></li>
         </ul>
       </div>
-      <div class="harrow"><span class="ms">arrow_forward</span><span>だから</span></div>
-      <div class="hbox you">
-        <div class="t"><span class="ms">favorite</span>あなたが集中すること<b>この3つだけ</b></div>
+      <div class="harrow"><span class="hic"><span class="ms">arrow_forward</span></span><span>だから</span></div>
+      <div class="hcard you">
+        <div class="hhead"><span class="hic"><span class="ms">favorite</span></span><span>あなたが集中すること</span><b>この3つだけ</b></div>
         <ul class="you3">
           <li><span class="ic"><span class="ms">handshake</span></span><b>会う</b><span>お見合いの席へ</span></li>
           <li><span class="ic"><span class="ms">forum</span></span><b>話す</b><span>1時間、向き合う</span></li>
@@ -433,16 +450,6 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
         </ul>
       </div>
     </div>
-
-    <div class="cta">
-      <a class="btn btn-line" href="#contact"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.74 2 10.3c0 2.63 1.5 4.97 3.85 6.5-.1.9-.6 3.1-.68 3.56-.1.6.22.6.47.44.2-.13 3.1-2.1 4.36-2.95.65.1 1.32.15 2 .15 5.52 0 10-3.74 10-8.3S17.52 2 12 2z"/></svg>LINEで無料相談を予約</a>
-      <a class="btn btn-ghost" href="#about">ルーモについて見る</a>
-    </div>
-    <ul class="facts">
-      <li><span class="ms">schedule</span>無料相談 60分</li>
-      <li><span class="ms">nights_stay</span>平日夜・土日対応</li>
-      <li><span class="ms">block</span>当日のご入会判断は不要</li>
-    </ul>
   </div>
 </section>
 
@@ -567,42 +574,50 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <div class="sh">
       <span class="k">カウンセラー</span>
       <h2>女性と男性、2名の仲人が担当します。</h2>
-      <p class="lead">代表の女性仲人が活動全体を担当し、男性仲人がサポートに入ります。ご相談の内容に応じて、どちらにもお話しいただけます。</p>
+      <p class="lead">外見づくりに強い女性仲人と、データと論理で活動計画を組み立てる男性仲人。ご相談の内容に応じて、どちらにもお話しいただけます。</p>
     </div>
 
-    <div class="lead-member">
-      <div class="img"><img src="images/counselor-f.jpg" alt="代表仲人"></div>
-      <div class="body">
-        <span class="tag">代表仲人</span>
-        <h3>○○ ○○</h3>
-        <div class="kana">IBJ認定婚活カウンセラー</div>
-        <p class="msg">「第一印象は、整えれば必ず変わります。」</p>
-        <p>眼鏡専門店とアパレルの販売職で、長年お客様の「似合う」を提案してきました。顔立ちに合う眼鏡の選び方、体型と場面に合う服の選び方は、お見合いの印象を左右する要素です。その経験を、会員お一人おひとりの外見づくりに生かしています。</p>
-        <div class="exp">
-          <div><span class="ms">eyeglasses</span><b>眼鏡専門店での販売経験</b><span>顔立ちに合うフレーム選びと、印象の設計</span></div>
-          <div><span class="ms">checkroom</span><b>アパレルでの販売経験</b><span>体型・年代・場面に合う服装の提案と買い物同行</span></div>
-          <div><span class="ms">record_voice_over</span><b>接客で培った対話力</b><span>初対面の方の緊張をほぐし、本音を引き出す</span></div>
+    <div class="team">
+      <div class="member">
+        <div class="img"><img src="images/counselor-f.jpg" alt="鶴田 幸奈"></div>
+        <div class="body">
+          <span class="tag">代表仲人</span>
+          <h3>鶴田 幸奈</h3>
+          <div class="kana">つるた ゆきな ／ IBJ認定婚活カウンセラー</div>
+          <p class="msg">「第一印象は、整えれば必ず変わります。」</p>
+          <p>眼鏡専門店とアパレルの販売職で、長年お客様の「似合う」を提案してきました。顔立ちに合う眼鏡、体型と場面に合う服装は、お見合いの印象を左右する要素です。その経験を、会員お一人おひとりの外見づくりに生かしています。</p>
+          <div class="exp">
+            <div><span class="ms">eyeglasses</span><b>眼鏡専門店での販売経験</b><span>顔立ちに合うフレーム選びと、印象の設計</span></div>
+            <div><span class="ms">checkroom</span><b>アパレルでの販売経験</b><span>体型・年代・場面に合う服装の提案と買い物同行</span></div>
+            <div><span class="ms">record_voice_over</span><b>接客で培った対話力</b><span>初対面の方の緊張をほぐし、本音を引き出す</span></div>
+          </div>
+          <ul>
+            <li>手持ちの服から組み合わせを提案するので、買い足しは最小限で済みます</li>
+            <li>服装・髪型・眼鏡の相談は、写真を送っていただければその場で助言します</li>
+            <li>女性の方には同性として、男性の方には「女性からどう見えるか」を率直にお伝えします</li>
+          </ul>
         </div>
-        <ul>
-          <li>入会からご成婚まで、担当を変えずに伴走します</li>
-          <li>お見合い前の服装・髪型・眼鏡の相談は、写真を送っていただければその場で助言します</li>
-          <li>女性の方には同性として、男性の方には「女性からどう見えるか」を率直にお伝えします</li>
-        </ul>
       </div>
-    </div>
 
-    <div class="sub-member">
-      <div class="img"><img src="images/counselor.jpg" alt="サポート仲人"></div>
-      <div class="body">
-        <span class="tag sub">サポート仲人</span>
-        <h3>中野 ○○</h3>
-        <div class="kana">IBJ認定婚活カウンセラー</div>
-        <p>宮崎県出身。会社員として働きながら、男性会員のサポートと、女性会員への「男性側の視点」の提供を担当します。自身もマッチングアプリで行き詰まった経験があり、同じ立場で相談に乗ります。</p>
-        <ul>
-          <li>男性の服装・会話・初回デートの組み立てを、同じ目線で具体的に</li>
-          <li>仕事と婚活の両立、ご家族への説明の進め方</li>
-          <li>女性の方へ、男性側の受け止め方をそのままお伝えします</li>
-        </ul>
+      <div class="member">
+        <div class="img"><img src="images/counselor.jpg" alt="中野 裕亮"></div>
+        <div class="body">
+          <span class="tag sub">サポート仲人</span>
+          <h3>中野 裕亮</h3>
+          <div class="kana">なかの ひろあき ／ IBJ認定婚活カウンセラー</div>
+          <p class="msg">「感覚ではなく、根拠のある計画で進めます。」</p>
+          <p>IT企業で培った論理的な考え方をもとに、会員の方の活動データ（申込みの傾向、お見合いの成立率、交際の進み方）を読み解き、次に何をすべきかを具体的にお伝えします。お話をじっくり伺い、ご希望に沿った計画に落とし込むのが役割です。</p>
+          <div class="exp">
+            <div><span class="ms">query_stats</span><b>データに基づく活動計画</b><span>申込み・成立率の傾向から、月ごとの計画を設計</span></div>
+            <div><span class="ms">psychology</span><b>男性側の視点を言語化</b><span>男性がどう受け取り、何を考えているかを具体的に説明</span></div>
+            <div><span class="ms">hearing</span><b>要望を聞き取る力</b><span>思いを伺ったうえで、無理のない進め方を一緒に決める</span></div>
+          </div>
+          <ul>
+            <li>「なぜ申込みが通らないか」を感覚ではなく、数字と理由で説明します</li>
+            <li>男性の方には、服装・会話・初回デートの組み立てを同じ目線で具体的に</li>
+            <li>女性の方には、男性側の受け止め方をそのままお伝えします</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -650,7 +665,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
         <a class="btn btn-ghost" href="#contact">相談する</a>
       </div>
       <div class="plan">
-        <span class="badge sub">費用を抑えたい方に</span>
+        <span class="badge sub">費用重視</span>
         <h3>スタンダード</h3>
         <p class="for">費用を抑え、ご自身のペースで進めたい方向けのプランです。</p>
         <div class="price"><dl>

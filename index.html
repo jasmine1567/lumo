@@ -85,19 +85,24 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 /* hero */
-.hero{position:relative;overflow:hidden;background:#F4F1EA;min-height:600px;display:flex;align-items:center}
-.hero .bg{position:absolute;inset:0;background:url(images/hero.jpg) no-repeat center 30%;background-size:cover;transform:scaleX(-1)}
-.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.94) 40%,rgba(255,255,255,.55) 60%,rgba(255,255,255,0) 100%)}
-.hero .wrap{position:relative;z-index:2;padding:clamp(72px,9vw,120px) 0}
-.hero .pre{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.2em;margin-bottom:16px}
-.hero h1{font-size:clamp(32px,4.2vw,52px);line-height:1.4;white-space:nowrap}
+.hero{position:relative;display:grid;grid-template-columns:46% 54%;min-height:calc(100vh - 72px);max-height:920px;background:#FBF9F4;overflow:hidden}
+.hero-text{position:relative;display:flex;align-items:center;padding:clamp(48px,6vw,96px) clamp(28px,5vw,80px) clamp(48px,6vw,96px) max(28px,calc((100vw - 1080px)/2))}
+.hero .inner{max-width:520px}
+.hero .pre{font-size:12.5px;font-weight:700;color:var(--accent);letter-spacing:.3em;margin-bottom:28px}
+.hero h1{font-size:clamp(34px,4.3vw,56px);line-height:1.35;white-space:nowrap}
 .hero h1 .l{display:block}
-.hero .sub{margin-top:22px;font-size:16.5px;color:var(--ink-2);max-width:520px}
-.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.facts{display:flex;flex-wrap:wrap;margin-top:28px}
-.facts li{display:flex;align-items:center;gap:8px;padding:8px 20px 8px 0;margin-right:20px;font-size:13px;font-weight:500;letter-spacing:.04em;border-right:1px solid var(--line);white-space:nowrap}
-.facts li .ms{font-size:18px;color:var(--accent)}
-.facts li:last-child{border-right:0;margin-right:0}
+.hero .phil{margin-top:30px;font-family:var(--serif);font-size:clamp(15px,1.4vw,18px);color:var(--ink-2);line-height:2;letter-spacing:.06em}
+.hero .links{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:40px}
+.tlink{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;letter-spacing:.12em;padding-bottom:8px;border-bottom:1px solid var(--ink);transition:.2s}
+.tlink .ms{font-size:18px;transition:.2s}
+.tlink:hover .ms{transform:translateX(4px)}
+.tlink.sub{color:var(--accent-dk);border-bottom-color:var(--accent)}
+.hero .scroll{position:absolute;left:max(28px,calc((100vw - 1080px)/2));bottom:28px;display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:.3em;color:var(--ink-2)}
+.hero .scroll span{width:48px;height:1px;background:var(--ink-2);display:block}
+.hero-photo{position:absolute;top:0;bottom:0;right:0;width:57%;overflow:hidden}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:28% 30%}
+.hero-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#FBF9F4 0%,rgba(251,249,244,.9) 12%,rgba(251,249,244,.5) 26%,rgba(251,249,244,0) 42%)}
+.hero-text{z-index:2}
 
 /* handoff */
 .handoff-sec{background:#fff;padding:clamp(56px,7vw,88px) 0 clamp(64px,8vw,100px)}
@@ -118,12 +123,12 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .chores .ct{font-size:15px;font-weight:500;color:var(--ink)}
 .chores li em{margin-left:auto;font-style:normal;font-size:11.5px;font-weight:700;color:var(--green);letter-spacing:.12em;white-space:nowrap;display:inline-flex;align-items:center;gap:4px}
 .chores li em::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--green);-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='black' d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>") center/contain no-repeat}
-.you3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;flex:1;align-content:center;padding-top:10px}
+.you3{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;flex:1;align-content:center;padding-top:10px}
 .you3 li{text-align:center;padding:10px 4px}
-.you3 .ic{width:60px;height:60px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 6px 16px rgba(184,134,43,.15)}
+.you3 .ic{width:56px;height:56px;border-radius:50%;background:#fff;border:1.5px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 6px 16px rgba(184,134,43,.15)}
 .you3 .ms{font-size:28px;color:var(--accent)}
-.you3 b{display:block;font-family:var(--serif);font-size:21px;font-weight:600;margin-top:10px;white-space:nowrap}
-.you3 span{display:block;font-size:12px;color:var(--ink-2);margin-top:2px;white-space:nowrap}
+.you3 b{display:block;font-family:var(--serif);font-size:20px;font-weight:600;margin-top:10px;white-space:nowrap}
+.you3 span{display:block;font-size:11px;color:var(--ink-2);margin-top:2px;white-space:nowrap}
 .harrow{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
 .harrow .hic{background:#fff;border:1.5px solid var(--line);color:var(--accent);width:44px;height:44px}
 .harrow .hic .ms{font-size:22px}
@@ -151,13 +156,16 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .about-grid .a ul li .ms{color:var(--green)}
 
 /* comparison */
-.cmp-head{display:grid;grid-template-columns:1fr 56px 1fr;align-items:end;margin-bottom:12px}
-.cmp-head .h{font-size:13px;letter-spacing:.16em;font-weight:700;padding:0 4px 10px;color:var(--ink-2)}
-.cmp-head .h.lumo{color:var(--accent)}
-.cmp-row{display:grid;grid-template-columns:1fr 56px 1fr;align-items:stretch;margin-bottom:12px}
+.cmp-head{display:grid;grid-template-columns:1fr 56px 1fr;margin-bottom:18px}
+.cmp-head .h{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px;letter-spacing:.12em;font-weight:700;padding:12px;border-radius:8px}
+.cmp-head .h .ms{font-size:20px}
+.cmp-head .h.app{background:#E4E0D7;color:#6B6557}
+.cmp-head .h.lumo{background:var(--accent);color:#fff}
+.cmp-row{display:grid;grid-template-columns:1fr 56px 1fr;align-items:stretch;margin-bottom:18px;position:relative;padding-top:26px}
+.cat{position:absolute;top:2px;left:50%;transform:translate(-50%,0);font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--ink-2);background:var(--bg-2);padding:0 10px;z-index:1;white-space:nowrap}
 .cmp-cell{padding:18px 24px;display:flex;gap:16px;align-items:center;min-height:92px}
-.cmp-cell.app{background:#F1EFEA;border-radius:8px 0 0 8px;color:var(--ink-2)}
-.cmp-cell.lumo{background:#fff;border:1px solid var(--accent);border-radius:0 8px 8px 0}
+.cmp-cell.app{background:#F1EFEA;border-radius:10px;color:var(--ink-2)}
+.cmp-cell.lumo{background:#fff;border:1.5px solid var(--accent);border-radius:10px}
 .cmp-cell .k{flex:none;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center}
 .cmp-cell .k .ms{font-size:26px}
 .cmp-cell.app .k{background:#E1DDD4;color:#7E776B}
@@ -165,19 +173,18 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .cmp-cell .t b{display:block;font-size:17px;font-weight:700;white-space:nowrap}
 .cmp-cell.lumo .t b{color:var(--ink)}
 .cmp-cell .t span{display:block;font-size:13px;color:var(--ink-2);margin-top:2px;white-space:nowrap}
-.cmp-arrow{display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg,#F1EFEA 0%,#F1EFEA 50%,#fff 50%,#fff 100%);color:#B9B2A4}
-.cmp-arrow .ms{font-size:28px}
-.cmp-result{display:grid;grid-template-columns:1fr 56px 1fr;margin-top:24px}
-.cmp-result .down{grid-column:1;display:flex;justify-content:center;margin-bottom:10px;color:#B9B2A4}
-.cmp-result .down2{grid-column:3;display:flex;justify-content:center;margin-bottom:10px;color:var(--accent)}
-.cmp-result .down .ms,.cmp-result .down2 .ms{font-size:30px}
-.res{padding:26px 28px;border-radius:8px;text-align:center}
+.cmp-arrow{display:flex;align-items:center;justify-content:center;color:var(--accent)}
+.cmp-arrow .ms{font-size:26px}
+.cmp-result{display:grid;grid-template-columns:1fr 56px 1fr;margin-top:40px;position:relative;padding-top:18px}
+.rlabel{position:absolute;top:0;left:0;right:0;display:flex;justify-content:center}
+.rlabel span{font-family:var(--serif);font-size:13px;letter-spacing:.3em;color:var(--ink-2);background:var(--bg-2);padding:0 14px;position:relative;z-index:1;font-weight:600}
+.rlabel::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
+.res{padding:26px 28px;border-radius:8px;text-align:center;margin-top:12px}
 .res.app{grid-column:1;background:#E4E0D7;color:#6B6557}
 .res.lumo{grid-column:3;background:linear-gradient(160deg,#FFFDF8,#F7EBD0);color:var(--ink);border:1.5px solid var(--accent);box-shadow:0 12px 30px rgba(184,134,43,.18)}
 .res .ms{font-size:36px;margin-bottom:6px}
 .res.app .ms{color:#8D8578}
 .res.lumo .ms{color:var(--accent)}
-.res .r1{display:block;font-size:12.5px;letter-spacing:.16em;font-weight:700;margin-bottom:6px;opacity:.75}
 .res .r2{display:block;font-family:var(--serif);font-size:clamp(18px,2vw,23px);font-weight:600;line-height:1.5;white-space:nowrap}
 .res.lumo .r2 em{font-style:normal;color:var(--accent-dk)}
 .res .r3{display:block;font-size:13.5px;margin-top:8px;opacity:.85;white-space:nowrap}
@@ -196,8 +203,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 /* counselors */
 .team{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
 .member{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
-.member .img{aspect-ratio:5/4;border-radius:0}
-.member .img img{object-position:center 20%}
+.member .img{aspect-ratio:1/1;border-radius:0}
+.member .img img{object-position:50% 22%}
+.member .img.f img{object-position:50% 8%}
 .member .body{padding:30px 30px 32px;display:flex;flex-direction:column;flex:1}
 .tag{display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--accent);border-radius:3px;padding:4px 10px;margin-bottom:12px}
 .tag.sub{color:var(--ink);background:transparent;border:1px solid var(--ink)}
@@ -319,11 +327,15 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 .sticky .btn{flex:1;padding:14px 10px;font-size:14px}
 
 @media (max-width:1100px){
-  .hero h1{font-size:clamp(28px,3.8vw,44px)}
+  .hero h1{font-size:clamp(28px,3.9vw,46px)}
 }
 @media (max-width:960px){
-  .hero .bg{background-position:60% 30%}
-  .hero::before{background:linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.9) 60%,rgba(255,255,255,.6) 100%)}
+  .hero{grid-template-columns:1fr;min-height:0;max-height:none}
+  .hero-text{padding:0 28px 64px;order:2}
+  .hero .scroll{display:none}
+  .hero-photo{position:relative;width:100%;order:1;aspect-ratio:4/3}
+  .hero-photo img{object-position:30% 30%}
+  .hero-photo::before{background:linear-gradient(180deg,rgba(251,249,244,0) 55%,#FBF9F4 100%)}
   .g3,.plans,.reports,.team-note{grid-template-columns:1fr 1fr}
   .team{grid-template-columns:1fr}
   .tl-track{display:none}
@@ -346,26 +358,31 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   .sticky{display:flex}
   footer .wrap{grid-template-columns:1fr}
   .hero{min-height:0}
-  .hero{min-height:0}
-  .hero h1{font-size:clamp(26px,7.4vw,32px);white-space:normal}
+  .hero h1{font-size:clamp(28px,8vw,34px);white-space:normal}
   .hero h1 .l{white-space:nowrap}
-  .hero .cta .btn{width:100%}
+  .hero-text{padding:0 20px 52px}
+  .hero-photo{aspect-ratio:1/1}
   .handoff{grid-template-columns:1fr}
   .harrow{flex-direction:row;padding:14px 0}
   .harrow .hic .ms{transform:rotate(90deg)}
   .hcard{padding:20px}
+  .you3{grid-template-columns:repeat(2,1fr)}
   .you3 b{font-size:18px}
   .facts li{padding:6px 12px 6px 0;margin-right:12px;font-size:12px}
   .numbers b{font-size:19px}.numbers span{font-size:11px;white-space:normal}.numbers div{padding:20px 10px}
-  .cmp-head{display:none}
   .cmp-row{grid-template-columns:1fr}
-  .cmp-cell.app{border-radius:8px 8px 0 0;min-height:0;padding:16px 18px}
-  .cmp-cell.lumo{border-radius:0 0 8px 8px;min-height:0;padding:18px}
-  .cmp-arrow{height:32px;background:#F1EFEA}
+  .cmp-cell.app{min-height:0;padding:16px 18px}
+  .cmp-cell.lumo{min-height:0;padding:18px}
+  .cmp-arrow{height:34px}
   .cmp-arrow .ms{transform:rotate(90deg)}
   .cmp-cell .t b{font-size:15.5px;white-space:normal}.cmp-cell .t span{white-space:normal}
   .cmp-result{grid-template-columns:1fr}
-  .cmp-result .down,.cmp-result .down2,.res.app,.res.lumo{grid-column:1}
+  .res.app,.res.lumo{grid-column:1}
+  .cmp-head{display:grid;grid-template-columns:1fr}
+  .cmp-head div:empty{display:none}
+  .cmp-head .h{padding:10px}
+  .cat{position:static;transform:none;text-align:center;margin-bottom:6px;background:transparent}
+  .cmp-row{padding-top:0;display:flex;flex-direction:column}
   .res.app{margin-bottom:20px}
   .res .r2,.res .r3{white-space:normal}
   .about-grid > div{padding:26px 22px}
@@ -406,21 +423,19 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <main id="top">
 <!-- HERO -->
 <section class="hero">
-<div class="bg"></div>
-<div class="wrap">
-<p class="pre">宮崎県の20代・30代のための結婚相談所</p>
-<h1><span class="l">婚活の、しんどい作業は</span><span class="l">すべて仲人へ。</span></h1>
-<p class="sub" style="word-break:keep-all;overflow-wrap:anywhere">本気度の​確認も、​日程調整も、​お断りの​連絡も、​ルーモが​引き受けます。​あなたは、​お相手と​向き合う​ことだけに​集中してください。</p>
-<div class="cta">
-<a class="btn btn-line" href="#contact"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 5.74 2 10.3c0 2.63 1.5 4.97 3.85 6.5-.1.9-.6 3.1-.68 3.56-.1.6.22.6.47.44.2-.13 3.1-2.1 4.36-2.95.65.1 1.32.15 2 .15 5.52 0 10-3.74 10-8.3S17.52 2 12 2z"></path></svg>LINEで無料相談を予約</a>
-<a class="btn btn-ghost" href="#handoff">どういうこと？</a>
+<div class="hero-text">
+<div class="inner">
+<p class="pre">宮崎県｜IBJ正規加盟店</p>
+<h1><span class="l">婚活の、</span><span class="l">しんどい作業は</span><span class="l">すべて仲人へ。</span></h1>
+<p class="phil" style="word-break:keep-all;overflow-wrap:anywhere">あなたは、​人を​好きに​なることにだけ、<br/>時間を​使ってください。</p>
+<div class="links">
+<a class="tlink" href="#handoff">ルーモの考え方<span class="ms">arrow_forward</span></a>
+<a class="tlink sub" href="#contact" style="word-break:keep-all;overflow-wrap:anywhere">無料相談の​ご予約<span class="ms">arrow_forward</span></a>
 </div>
-<ul class="facts">
-<li><span class="ms">schedule</span>無料相談 60分</li>
-<li><span class="ms">nights_stay</span>平日夜・土日対応</li>
-<li><span class="ms">block</span>当日のご入会判断は不要</li>
-</ul>
 </div>
+<div class="scroll"><span></span>SCROLL</div>
+</div>
+<div class="hero-photo"><img alt="" src="images/hero.jpg"/></div>
 </section>
 <!-- HANDOFF -->
 <section class="handoff-sec" id="handoff">
@@ -439,8 +454,9 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </div>
 <div class="harrow"><span class="hic"><span class="ms">arrow_forward</span></span><span>だから</span></div>
 <div class="hcard you">
-<div class="hhead"><span class="hic"><span class="ms">favorite</span></span><span>あなたが集中すること</span><b>この3つだけ</b></div>
+<div class="hhead"><span class="hic"><span class="ms">favorite</span></span><span>あなたが集中すること</span><b>この4つだけ</b></div>
 <ul class="you3">
+<li><span class="ic"><span class="ms">person_search</span></span><b>選ぶ</b><span>申込み・申受けの中から</span></li>
 <li><span class="ic"><span class="ms">handshake</span></span><b>会う</b><span>お見合いの席へ</span></li>
 <li><span class="ic"><span class="ms">forum</span></span><b>話す</b><span>1時間、向き合う</span></li>
 <li><span class="ic"><span class="ms">favorite_border</span></span><b>考える</b><span>好きになれそうか</span></li>
@@ -493,47 +509,49 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <div class="wrap">
 <div class="sh center">
 <span class="k">アプリとの違い</span>
-<h2 style="word-break:keep-all;overflow-wrap:anywhere"><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">アプリの​​婚活は、</span><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">ルーモで​​こう​​変わります。</span></h2>
+<h2 style="word-break:keep-all;overflow-wrap:anywhere"><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">アプリでは​​自分で​​やる​​ことを、</span><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">ルーモでは​​仲人が​​やります。</span></h2>
 </div>
 <div class="cmp">
-<div class="cmp-head"><div class="h">マッチングアプリ</div><div></div><div class="h lumo">ルーモ結婚相談所</div></div>
+<div class="cmp-head"><div class="h app"><span class="ms">smartphone</span>マッチングアプリの場合</div><div></div><div class="h lumo"><span class="ms">volunteer_activism</span>ルーモの場合</div></div>
 <div class="cmp-row">
-<div class="cmp-cell app"><div class="k"><span class="ms">psychology_alt</span></div><div class="t"><b>相手が本気か、分からない</b><span>恋人探しや暇つぶしの人も混ざっている</span></div></div>
+<div class="cat">相手の本気度</div>
+<div class="cmp-cell app"><div class="k"><span class="ms">psychology_alt</span></div><div class="t"><b>自分で見極める</b><span>恋人探しや暇つぶしの人も混ざっている</span></div></div>
 <div class="cmp-arrow"><span class="ms">arrow_forward</span></div>
-<div class="cmp-cell lumo"><div class="k"><span class="ms">verified_user</span></div><div class="t"><b>全員が結婚前提</b><span>独身証明書・収入証明の提出が入会条件</span></div></div>
+<div class="cmp-cell lumo"><div class="k"><span class="ms">verified_user</span></div><div class="t"><b>入会時に確認済み</b><span>全員が独身証明書・収入証明を提出</span></div></div>
 </div>
 <div class="cmp-row">
-<div class="cmp-cell app"><div class="k"><span class="ms">speaker_notes_off</span></div><div class="t"><b>お断りは、自分で伝える</b><span>気まずくて、そのまま放置してしまう</span></div></div>
+<div class="cat">お断りの連絡</div>
+<div class="cmp-cell app"><div class="k"><span class="ms">speaker_notes_off</span></div><div class="t"><b>自分で伝える</b><span>気まずくて、そのまま放置してしまう</span></div></div>
 <div class="cmp-arrow"><span class="ms">arrow_forward</span></div>
-<div class="cmp-cell lumo"><div class="k"><span class="ms">support_agent</span></div><div class="t"><b>お断りは仲人が伝える</b><span>あなたは仲人に一言伝えるだけ</span></div></div>
+<div class="cmp-cell lumo"><div class="k"><span class="ms">support_agent</span></div><div class="t"><b>仲人が伝える</b><span>あなたは仲人に一言伝えるだけ</span></div></div>
 </div>
 <div class="cmp-row">
-<div class="cmp-cell app"><div class="k"><span class="ms">event_busy</span></div><div class="t"><b>日程もお店も、自分で調整</b><span>やり取りが続いて、会う前に疲れる</span></div></div>
+<div class="cat">日程・お店</div>
+<div class="cmp-cell app"><div class="k"><span class="ms">event_busy</span></div><div class="t"><b>自分で調整する</b><span>やり取りが続いて、会う前に疲れる</span></div></div>
 <div class="cmp-arrow"><span class="ms">arrow_forward</span></div>
-<div class="cmp-cell lumo"><div class="k"><span class="ms">event_available</span></div><div class="t"><b>日程と場所は仲人が手配</b><span>あなたは当日、会場に向かうだけ</span></div></div>
+<div class="cmp-cell lumo"><div class="k"><span class="ms">event_available</span></div><div class="t"><b>仲人が手配する</b><span>あなたは当日、会場に向かうだけ</span></div></div>
 </div>
 <div class="cmp-row">
-<div class="cmp-cell app"><div class="k"><span class="ms">visibility</span></div><div class="t"><b>職場の人に見つかる</b><span>地方では、知り合いが出てきやすい</span></div></div>
+<div class="cat">プライバシー</div>
+<div class="cmp-cell app"><div class="k"><span class="ms">visibility</span></div><div class="t"><b>職場の人に見つかることも</b><span>地方では、知り合いが出てきやすい</span></div></div>
 <div class="cmp-arrow"><span class="ms">arrow_forward</span></div>
 <div class="cmp-cell lumo"><div class="k"><span class="ms">lock</span></div><div class="t"><b>会員以外は閲覧できない</b><span>検索エンジンにも表示されない</span></div></div>
 </div>
 <div class="cmp-row">
-<div class="cmp-cell app"><div class="k"><span class="ms">person_off</span></div><div class="t"><b>迷っても、相談相手がいない</b><span>続けるか、やめるかも一人で判断</span></div></div>
+<div class="cat">迷ったとき</div>
+<div class="cmp-cell app"><div class="k"><span class="ms">person_off</span></div><div class="t"><b>一人で判断する</b><span>続けるか、やめるかも自分次第</span></div></div>
 <div class="cmp-arrow"><span class="ms">arrow_forward</span></div>
-<div class="cmp-cell lumo"><div class="k"><span class="ms">forum</span></div><div class="t"><b>専任の仲人に、いつでも相談</b><span>LINEで、いつでも相談できる</span></div></div>
+<div class="cmp-cell lumo"><div class="k"><span class="ms">forum</span></div><div class="t"><b>専任の仲人に相談できる</b><span>LINEで、いつでも</span></div></div>
 </div>
 <div class="cmp-result">
-<div class="down"><span class="ms">arrow_downward</span></div>
-<div class="down2"><span class="ms">arrow_downward</span></div>
+<div class="rlabel"><span>その結果</span></div>
 <div class="res app">
 <span class="ms">battery_alert</span>
-<span class="r1">その結果</span>
 <span class="r2">疲れて、活動をやめてしまう</span>
 <span class="r3">出会いはあっても、結婚にたどり着かない</span>
 </div>
 <div class="res lumo">
 <span class="ms fill">favorite</span>
-<span class="r1">その結果</span>
 <span class="r2"><em>お相手選びだけ</em>に集中できる</span>
 <span class="r3">だから続けられる。だから、結婚に近づく。</span>
 </div>
@@ -568,7 +586,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </div>
 <div class="team">
 <div class="member">
-<div class="img"><img alt="鶴田 幸奈" src="images/counselor-f.jpg"/></div>
+<div class="img f"><img alt="鶴田 幸奈" src="images/counselor-f.jpg"/></div>
 <div class="body">
 <span class="tag">代表仲人</span>
 <h3>鶴田 幸奈</h3>
@@ -760,9 +778,9 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <h2 style="word-break:keep-all;overflow-wrap:anywhere">ご相談の​前に、​よく​聞かれる​こと。</h2>
 </div>
 <div class="faq">
-<details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>無料相談で、​入会を​勧められますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">料金の​ご説明は​しますが、​その​場での​判断は​求めません。​期限付きの​割引も​ありません。​相談のみで​終えていただいて​構いません。</div></details>
+<details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>無料相談で、​入会を​勧められますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">料金の​ご説明は​しますが、​その​場での​判断は​求めません。​相談のみで​終えていただいて​構いません。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>平日の​日中は​仕事で​動けません。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">面談は​平日19時以降と​土日が​中心です。​お見合いも​土日や​平日夜に​設定でき、​オンラインでも​行えます。</div></details>
-<details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>宮崎で​活動して、​出会いの​数は​足りますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">IBJは​全国約11万人の​ネットワークです。​宮崎県内に​加え、​鹿児島・熊本・​福岡の​会員にも​お申し込みいただけます。​無料相談で、​ご希望の​条件に​合う方が​何人いるかを​画面で​ご確認いただけます。</div></details>
+<details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>宮崎で​活動して、​出会いの​数は​足りますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">IBJは​全国約11万人の​ネットワークです。​お住まいの​地域に​関わらず、​全国の​会員に​お申し込みでき、​全国の​会員から​お申し込みを​受けられます。​無料相談で、​ご希望の​条件に​合う方が​何人いるかを​画面で​ご確認いただけます。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>知人に​活動を​知られたく​ありません。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">プロフィールは​IBJの​会員のみが​閲覧でき、​検索エンジンには​表示されません。​写真の​公開範囲を​限定する​こともできます。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>どの​くらいの​期間で​結婚できますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">IBJ全体では、​ご入会から​ご成婚までの​平均は​約1年です。​ルーモでも​1年以内を​目安に​計画を​立てますが、​個人差が​あり、​結婚を​お約束する​ものではありません。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>途中で​やめる​ことは​できますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">いつでも​退会できます。​退会月の​月会費以外に​費用は​かからず、​成婚料も​発生しません。​休会制度​（月3,300円）も​あります。</div></details>

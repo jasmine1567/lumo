@@ -4,7 +4,7 @@
 import budoux, re
 from bs4 import BeautifulSoup, NavigableString
 parser = budoux.load_default_japanese_parser()
-SEL = ".lead, .tl p, .member p, .member li, .plan .for, details .a, .plan-notes li, summary, .micro, .about-grid li, .card li, .points li, .area span, footer p, .hero .sub, .report q, .report .meta dd, .team-note li, h2 .l, h2, .about-grid h3, .card h3, .plan li, .exp b, .exp span, .member .msg, .member p, .member li, .handoff-k, .hero .phil"
+SEL = ".lead, .tl p, .member p, .member li, .plan .for, details .a, .plan-notes li, summary, .micro, .about-grid li, .card li, .points li, .area span, footer p, .hero .sub, .report q, .report .meta dd, .team-note li, h2 .l, h2, .about-grid h3, .card h3, .plan li, .exp b, .exp span, .member .msg, .member p, .member li, .handoff-k, .hero .phil, .hero .note, .consult-list b, .consult-list span, .consult-box p, .svc-table td, .svc-table tbody th, .plan-notes li"
 soup = BeautifulSoup(open("index.src.html", encoding="utf-8"), "html.parser")
 ZW = "​"
 def seg(text):

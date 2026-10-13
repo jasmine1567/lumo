@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ルーモ結婚相談所｜宮崎県のIBJ正規加盟 結婚相談所（20代・30代）</title>
-<meta name="description" content="宮崎県の結婚相談所。IBJ正規加盟、紹介可能会員約11万人。日程調整やお断りの連絡は仲人が担当し、あなたはお相手選びに集中できます。平日夜・土日の相談に対応。無料相談受付中。">
+<title>ルーモ結婚相談所｜宮崎県都城市のIBJ加盟 結婚相談所（20代・30代）</title>
+<meta name="description" content="宮崎県都城市の結婚相談所。IBJ加盟、紹介可能会員約11万人。男女2名の仲人が、日程調整やお断りの連絡、プロフィール原稿の作成を担当。20代応援プランは月会費8,800円から。平日夜・土日の無料相談に対応。">
 <meta property="og:title" content="ルーモ結婚相談所｜宮崎県のIBJ正規加盟 結婚相談所">
 <meta property="og:description" content="日程調整もお断りの連絡も、仲人が担当。あなたはお相手選びに集中できます。">
 <meta property="og:image" content="images/ogp.jpg">
@@ -90,7 +90,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .hero .pre{font-size:12.5px;font-weight:700;color:var(--accent);letter-spacing:.3em;margin-bottom:28px}
 .hero h1{font-size:clamp(34px,4.3vw,56px);line-height:1.35;white-space:nowrap}
 .hero h1 .l{display:block}
-.hero .phil{margin-top:30px;font-family:var(--serif);font-size:clamp(15px,1.4vw,18px);color:var(--ink-2);line-height:2;letter-spacing:.06em}
+.hero .phil{margin-top:26px;font-size:clamp(14.5px,1.25vw,16px);color:var(--ink);line-height:2;max-width:520px}
+.hero .note{margin-top:14px;font-size:13px;color:var(--ink-2);line-height:1.8;max-width:520px}
 .hero .links{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:40px}
 .tlink{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:700;letter-spacing:.12em;padding-bottom:8px;border-bottom:1px solid var(--ink);transition:.2s}
 .tlink .ms{font-size:18px;transition:.2s}
@@ -219,6 +220,11 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .exp span{display:block;font-size:11.5px;color:var(--ink-2);line-height:1.6}
 .member ul li{position:relative;padding-left:18px;font-size:14px;color:var(--ink-2);margin-bottom:5px}
 .member ul li::before{content:"";position:absolute;left:0;top:.95em;width:8px;height:1px;background:var(--accent)}
+/* team note */
+.team-note{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.team-note li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;align-items:center;gap:12px;font-size:14px}
+.team-note li .ms{color:var(--accent);font-size:22px;flex:none}
+
 /* plans */
 .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
 .plan{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px 30px;display:flex;flex-direction:column;position:relative}
@@ -226,7 +232,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .plan .badge{position:absolute;top:0;left:30px;transform:translateY(-50%);background:var(--accent);color:#fff;font-size:11.5px;font-weight:700;padding:5px 12px;letter-spacing:.12em;border-radius:3px;white-space:nowrap}
 .plan .badge.sub{background:var(--ink-2)}
 .plan h3{font-size:22px;white-space:nowrap}
-.plan .for{font-size:13.5px;color:var(--ink-2);margin:8px 0 22px;height:3.2em}
+.plan .for{font-size:13.5px;color:var(--ink-2);margin:8px 0 22px;line-height:1.7;height:5.2em}
 .price{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:18px}
 .price dl{display:grid;grid-template-columns:1fr auto;grid-auto-rows:46px;align-items:center}
 .price dt,.price dd{border-bottom:1px solid #F0ECE4;height:46px;display:flex;align-items:center;line-height:1}
@@ -243,6 +249,56 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .plan-notes{margin-top:28px;max-width:820px}
 .plan-notes li{position:relative;padding-left:16px;font-size:13px;color:var(--ink-2);line-height:1.8;margin-bottom:4px}
 .plan-notes li::before{content:"※";position:absolute;left:0}
+
+/* service table */
+.svc{margin-top:48px}
+.svc-title{font-size:18px;text-align:center;margin-bottom:18px}
+.svc-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.svc-table{width:100%;min-width:640px;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:14px}
+.svc-table th,.svc-table td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:center;vertical-align:middle;line-height:1.6}
+.svc-table tbody tr:last-child th,.svc-table tbody tr:last-child td{border-bottom:0}
+.svc-table thead th{background:var(--bg-2);font-size:13px;letter-spacing:.06em}
+.svc-table thead th.hl{background:var(--accent);color:#fff}
+.svc-table tbody th{text-align:left;font-weight:500;color:var(--ink-2);font-size:13.5px;white-space:nowrap;background:#FCFBF8}
+.svc-table td.hl{background:#FFFBF2;font-weight:700}
+.svc-table td.na{color:#A9AFB8}
+.price dt.sum,.price dd.sum{background:#FCFBF8;font-weight:700;color:var(--ink)}
+.price dt.sum{padding-left:8px}
+.price dd.sum{padding-right:8px}
+
+/* simulation */
+.formula{display:inline-flex;align-items:center;gap:12px;margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 22px;font-size:14.5px;font-weight:500;white-space:nowrap}
+.formula i{font-style:normal;color:var(--accent);font-weight:700}
+.sh .lead.nb{white-space:nowrap;margin-top:14px}
+.sim-head .t{white-space:nowrap}
+.sim-head b{margin-right:6px}
+.sim{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sim-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px}
+.sim-head{display:flex;align-items:center;gap:10px;font-size:15px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.sim-head .ms{color:var(--accent);font-size:22px}
+.sim-head b{font-family:var(--serif);font-size:21px;font-weight:600}
+.sim-card dl{display:grid;grid-template-columns:1fr auto;align-items:center}
+.sim-card dt,.sim-card dd{padding:12px 0;border-bottom:1px solid #F0ECE4;display:flex;align-items:center;height:52px}
+.sim-card dt:nth-last-child(2),.sim-card dd:last-child{border-bottom:0}
+.sim-card dt{font-size:14px;color:var(--ink-2)}
+.sim-card dd{justify-content:flex-end;font-family:var(--serif);font-weight:600;font-size:20px;font-variant-numeric:tabular-nums}
+.sim-card dd small{font-family:var(--sans);font-size:12px;font-weight:500;color:var(--ink-2);margin-left:3px}
+.sim-card dt.hl,.sim-card dd.hl{color:var(--accent-dk)}
+.sim-card dt.hl::after{content:"おすすめ";font-size:9.5px;font-weight:700;color:#fff;background:var(--accent);padding:2px 7px;border-radius:3px;margin-left:8px;letter-spacing:.08em}
+
+/* consult */
+.consult{display:grid;grid-template-columns:1.3fr .9fr;gap:28px;align-items:start}
+.consult-list li{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.consult-list li:first-child{border-top:1px solid var(--line)}
+.consult-list .ic{flex:none;width:44px;height:44px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center}
+.consult-list .ic .ms{font-size:22px}
+.consult-list b{display:block;font-size:15.5px}
+.consult-list span{display:block;font-size:13.5px;color:var(--ink-2);margin-top:2px}
+.consult-box{background:#fff;border:1.5px solid var(--accent);border-radius:var(--radius);padding:30px 28px;text-align:center;box-shadow:var(--shadow)}
+.consult-box .ms{font-size:34px;color:var(--accent)}
+.consult-box b{display:block;font-family:var(--serif);font-size:18px;margin:10px 0 8px}
+.consult-box p{font-size:14px;color:var(--ink-2);margin-bottom:18px}
+.consult-box .btn{width:100%}
 
 /* timeline */
 .tl{position:relative;margin-top:12px}
@@ -336,6 +392,8 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   .hero-photo img{object-position:30% 30%}
   .hero-photo::before{background:linear-gradient(180deg,rgba(251,249,244,0) 55%,#FBF9F4 100%)}
   .g3,.plans,.reports,.team-note{grid-template-columns:1fr 1fr}
+  .consult{grid-template-columns:1fr}
+  .sim{grid-template-columns:1fr}
   .team{grid-template-columns:1fr}
   .tl-track{display:none}
   .tl ol{grid-template-columns:repeat(3,1fr);row-gap:28px}
@@ -351,7 +409,14 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   body{font-size:15px}
   .nav ul,.nav .btn{display:none}
   .menu-btn{display:flex}
-  .g3,.plans,.reports,.team-note{grid-template-columns:1fr}
+  .g3,.plans,.reports,.team-note,.sim{grid-template-columns:1fr}
+  .plan .for{height:auto}
+  .svc-table{min-width:0;font-size:12px}
+  .formula{white-space:normal;justify-content:center;flex-wrap:wrap;gap:8px;font-size:13.5px;padding:12px 16px}
+  .sh .lead.nb{white-space:normal}
+  .svc-table th,.svc-table td{padding:10px 5px;line-height:1.5}
+  .svc-table thead th{font-size:11.5px;letter-spacing:0}
+  .svc-table tbody th{white-space:normal;font-size:12px;width:88px;padding-left:8px}
   .tl ol{grid-template-columns:1fr 1fr}
   .f .row{grid-template-columns:1fr}
   .sticky{display:flex}
@@ -429,7 +494,8 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <div class="inner">
       <p class="pre">宮崎県｜IBJ正規加盟店</p>
       <h1><span class="l">婚活の、</span><span class="l">しんどい作業は</span><span class="l">すべて仲人へ。</span></h1>
-      <p class="phil">あなたは、人を好きになることにだけ、<br>時間を使ってください。</p>
+      <p class="phil">お見合いの日程調整やお断りの連絡、プロフィール原稿の作成まで。面倒な手続きは仲人に任せて、あなたは大切な出会いに集中してください。</p>
+      <p class="note">※サポート内容・対応回数はプランによって異なります。</p>
       <div class="links">
         <a href="#handoff" class="tlink">ルーモの考え方<span class="ms">arrow_forward</span></a>
         <a href="#contact" class="tlink sub">無料相談のご予約<span class="ms">arrow_forward</span></a>
@@ -448,11 +514,11 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
       <div class="hcard">
         <div class="hhead"><span class="hic"><span class="ms">volunteer_activism</span></span><span>仲人が引き受けます</span></div>
         <ul class="chores">
-          <li><span class="cic"><span class="ms">fact_check</span></span><span class="ct">相手の本気度の確認</span><em>代行</em></li>
-          <li><span class="cic"><span class="ms">edit_note</span></span><span class="ct">プロフィールの作成</span><em>代行</em></li>
+          <li><span class="cic"><span class="ms">fact_check</span></span><span class="ct">独身証明・本人確認の確認</span><em>確認済み</em></li>
+          <li><span class="cic"><span class="ms">edit_note</span></span><span class="ct">プロフィール原稿の作成</span><em>代行</em></li>
           <li><span class="cic"><span class="ms">calendar_month</span></span><span class="ct">日程とお店の調整</span><em>代行</em></li>
           <li><span class="cic"><span class="ms">mail</span></span><span class="ct">お断りの連絡</span><em>代行</em></li>
-          <li><span class="cic"><span class="ms">psychology</span></span><span class="ct">迷ったときの判断</span><em>相談</em></li>
+          <li><span class="cic"><span class="ms">psychology</span></span><span class="ct">迷ったときの相談</span><em>仲人へ</em></li>
         </ul>
       </div>
       <div class="harrow"><span class="hic"><span class="ms">arrow_forward</span></span><span>だから</span></div>
@@ -472,7 +538,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <div class="numbers">
   <div class="wrap">
     <div><span class="ms">groups</span><b>約11万人</b><span>IBJネットワークの会員数</span></div>
-    <div><span class="ms">verified_user</span><b>独身証明 100%</b><span>公的書類の提出を確認済み</span></div>
+    <div><span class="ms">verified_user</span><b>独身証明書 必須</b><span>全会員が提出するIBJの入会条件</span></div>
     <div><span class="ms">videocam</span><b>対面・オンライン</b><span>宮崎県内どこからでも相談可</span></div>
     <div><span class="ms">nightlight</span><b>平日 19時〜</b><span>働きながら活動できる時間帯</span></div>
   </div>
@@ -499,7 +565,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
       <div class="a">
         <h3><span class="ms">volunteer_activism</span>結婚相談所は、手続きを人に任せられる場所</h3>
         <ul>
-          <li><span class="ms">check_circle</span>会員は全員、独身証明書と本人確認書類を提出済み</li>
+          <li><span class="ms">check_circle</span>会員は全員、独身証明書と本人確認書類を提出して入会</li>
           <li><span class="ms">check_circle</span>お見合いの日程と場所は、仲人が手配</li>
           <li><span class="ms">check_circle</span>お断りの連絡は、仲人が代行</li>
           <li><span class="ms">check_circle</span>活動の悩みは、専任の仲人に相談できる</li>
@@ -521,10 +587,10 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
       <div class="cmp-head"><div class="h app"><span class="ms">smartphone</span>マッチングアプリの場合</div><div></div><div class="h lumo"><span class="ms">volunteer_activism</span>ルーモの場合</div></div>
 
       <div class="cmp-row">
-        <div class="cat">相手の本気度</div>
-        <div class="cmp-cell app"><div class="k"><span class="ms">psychology_alt</span></div><div class="t"><b>自分で見極める</b><span>恋人探しや暇つぶしの人も混ざっている</span></div></div>
+        <div class="cat">お相手の身元</div>
+        <div class="cmp-cell app"><div class="k"><span class="ms">psychology_alt</span></div><div class="t"><b>自己申告だけが頼り</b><span>結婚の意思も独身かどうかも確かめにくい</span></div></div>
         <div class="cmp-arrow"><span class="ms">arrow_forward</span></div>
-        <div class="cmp-cell lumo"><div class="k"><span class="ms">verified_user</span></div><div class="t"><b>入会時に確認済み</b><span>全員が独身証明書・収入証明を提出</span></div></div>
+        <div class="cmp-cell lumo"><div class="k"><span class="ms">verified_user</span></div><div class="t"><b>入会時に書類で確認</b><span>独身証明書は全員、収入証明は男性必須</span></div></div>
       </div>
       <div class="cmp-row">
         <div class="cat">お断りの連絡</div>
@@ -548,7 +614,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
         <div class="cat">迷ったとき</div>
         <div class="cmp-cell app"><div class="k"><span class="ms">person_off</span></div><div class="t"><b>一人で判断する</b><span>続けるか、やめるかも自分次第</span></div></div>
         <div class="cmp-arrow"><span class="ms">arrow_forward</span></div>
-        <div class="cmp-cell lumo"><div class="k"><span class="ms">forum</span></div><div class="t"><b>専任の仲人に相談できる</b><span>LINEで、いつでも</span></div></div>
+        <div class="cmp-cell lumo"><div class="k"><span class="ms">forum</span></div><div class="t"><b>担当の仲人に相談できる</b><span>LINEはいつでも送信可。返信は対応時間内に</span></div></div>
       </div>
 
       <div class="cmp-result">
@@ -568,20 +634,20 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   </div>
 </section>
 
-<!-- POLICY -->
-<section class="sec">
+<!-- REASONS -->
+<section class="sec" id="reasons">
   <div class="wrap">
     <div class="sh center">
-      <span class="k">ルーモの方針</span>
-      <h2>大切にしている、三つのこと。</h2>
+      <span class="k">ルーモが選ばれる理由</span>
+      <h2>ルーモの、三つの強み。</h2>
     </div>
     <div class="grid g3">
-      <div class="card"><div class="ic"><span class="ms">hourglass_empty</span></div><h3>その場での決断を求めません</h3>
-        <ul><li>無料相談の最後に入会を迫りません</li><li>期限付きの割引で急がせません</li><li>ご家族と相談し、納得されてからで結構です</li></ul></div>
-      <div class="card"><div class="ic"><span class="ms">hearing</span></div><h3>提案の前に、まず伺います</h3>
-        <ul><li>面談の前半は、お話を伺う時間です</li><li>これまでの婚活と、望む家庭像を確認します</li><li>面談後、お話の要点をまとめてお送りします</li></ul></div>
-      <div class="card"><div class="ic"><span class="ms">query_stats</span></div><h3>根拠のある計画を立てます</h3>
-        <ul><li>IBJの会員検索を一緒に確認します</li><li>ご希望に合う方が何人いるか、数字で把握します</li><li>月ごとの活動計画に落とし込みます</li></ul></div>
+      <div class="card"><div class="ic"><span class="ms">groups</span></div><h3>男女2名の仲人体制</h3>
+        <ul><li>女性仲人と男性仲人、それぞれの視点から助言します</li><li>お見合い・交際・第一印象で、異性側の受け止め方を確認できます</li><li>ご相談の内容に応じて、担当する仲人をご案内します</li></ul></div>
+      <div class="card"><div class="ic"><span class="ms">checkroom</span></div><h3>第一印象を整えるサポート</h3>
+        <ul><li>眼鏡専門店・アパレル販売の経験を持つ仲人が担当します</li><li>髪型・服装・眼鏡・プロフィール写真の相談に対応します</li><li>対応内容と回数は、プランの条件に沿ってご案内します</li></ul></div>
+      <div class="card"><div class="ic"><span class="ms">query_stats</span></div><h3>活動データをもとにした振り返り</h3>
+        <ul><li>IT業界の経験を持つ仲人が、活動の記録を一緒に読み解きます</li><li>希望条件・申込状況・お見合いの成立状況から、改善できる点を考えます</li><li>励ましだけで終わらせず、次の一手を具体的に決めます</li></ul></div>
     </div>
   </div>
 </section>
@@ -602,7 +668,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
           <span class="tag">代表仲人</span>
           <h3>鶴田 幸奈</h3>
           <div class="kana">つるた ゆきな ／ IBJ認定婚活カウンセラー</div>
-          <p class="msg">「第一印象は、整えれば必ず変わります。」</p>
+          <p class="msg">「第一印象は、整えることで変えられます。」</p>
           <p>眼鏡専門店とアパレルの販売職で、長年お客様の「似合う」を提案してきました。顔立ちに合う眼鏡、体型と場面に合う服装は、お見合いの印象を左右する要素です。その経験を、会員お一人おひとりの外見づくりに生かしています。</p>
           <div class="exp">
             <div><span class="ms">eyeglasses</span><b>眼鏡専門店での販売経験</b><span>顔立ちに合うフレーム選びと、印象の設計</span></div>
@@ -642,7 +708,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <ul class="team-note">
       <li><span class="ms">schedule</span>平日 19:00〜22:00 ／ 土日 10:00〜18:00</li>
       <li><span class="ms">meeting_room</span>個室スペース（都城市内）またはオンライン</li>
-      <li><span class="ms">chat</span>LINEでいつでも相談（返信は順次）</li>
+      <li><span class="ms">chat</span>LINEはいつでも送信可（返信は対応時間内）</li>
     </ul>
   </div>
 </section>
@@ -654,84 +720,180 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
       <span class="k">料金プラン</span>
       <h2>3つのプランから、お選びいただけます。</h2>
       <ul class="points">
-        <li><span class="ms">check</span>お見合い料は何度でも無料</li>
-        <li><span class="ms">check</span>ご入会後の追加費用・更新料はありません</li>
+        <li><span class="ms">check</span>お見合い料・更新料は0円</li>
+        <li><span class="ms">check</span>成婚料は、ご成婚退会時にのみ発生します</li>
         <li><span class="ms">check</span>表示はすべて税込です</li>
       </ul>
     </div>
     <div class="plans">
       <div class="plan">
-        <span class="badge sub">29歳以下</span>
-        <h3>20代プラン</h3>
-        <p class="for">早く動き始める方を、料金面で後押しするプランです。</p>
+        <span class="badge sub">入会時29歳以下</span>
+        <h3>20代応援プラン</h3>
+        <p class="for">費用を抑えて始めたい20代向け。無理なく始められる、本格的な仲人型婚活です。</p>
         <div class="price"><dl>
-          <dt>入会金</dt><dd>0<small>円</small></dd>
+          <dt>入会金</dt><dd>22,000<small>円</small></dd>
           <dt>登録料</dt><dd>33,000<small>円</small></dd>
-          <dt>月会費</dt><dd>6,600<small>円</small></dd>
+          <dt class="sum">初期費用合計</dt><dd class="sum">55,000<small>円</small></dd>
+          <dt>月会費</dt><dd>8,800<small>円</small></dd>
           <dt>お見合い料</dt><dd>0<small>円</small></dd>
           <dt>成婚料</dt><dd>165,000<small>円</small></dd>
         </dl></div>
         <ul>
-          <li><span class="ms">check</span>会員検索・お申し込み（月20件）</li>
-          <li><span class="ms">check</span>プロフィール作成の助言</li>
+          <li><span class="ms">check</span>お見合い申込 月50件まで</li>
+          <li><span class="ms">check</span>プロフィール原稿の作成</li>
           <li><span class="ms">check</span>日程調整・お断りの代行</li>
-          <li><span class="ms">check</span>2か月に1回の面談（オンライン）</li>
+          <li><span class="ms">check</span>定期面談 2か月に1回（30分）</li>
           <li><span class="ms">check</span>LINE相談</li>
-          <li class="off"><span class="ms">remove</span>服装の助言・買い物の同行</li>
-          <li class="off"><span class="ms">remove</span>交際中の定期面談</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contact">相談する</a>
-      </div>
-      <div class="plan">
-        <span class="badge sub">費用重視</span>
-        <h3>スタンダード</h3>
-        <p class="for">費用を抑え、ご自身のペースで進めたい方向けのプランです。</p>
-        <div class="price"><dl>
-          <dt>入会金</dt><dd>19,800<small>円</small></dd>
-          <dt>登録料</dt><dd>33,000<small>円</small></dd>
-          <dt>月会費</dt><dd>11,000<small>円</small></dd>
-          <dt>お見合い料</dt><dd>0<small>円</small></dd>
-          <dt>成婚料</dt><dd>198,000<small>円</small></dd>
-        </dl></div>
-        <ul>
-          <li><span class="ms">check</span>会員検索・お申し込み（月30件）</li>
-          <li><span class="ms">check</span>プロフィール作成の助言</li>
-          <li><span class="ms">check</span>日程調整・お断りの代行</li>
-          <li><span class="ms">check</span>2か月に1回の面談（対面・オンライン）</li>
-          <li><span class="ms">check</span>LINE相談</li>
-          <li class="off"><span class="ms">remove</span>服装の助言・買い物の同行</li>
-          <li class="off"><span class="ms">remove</span>交際中の定期面談</li>
+          <li><span class="ms">check</span>服装の写真相談 入会時1回</li>
+          <li><span class="ms">check</span>交際中の相談 LINE</li>
         </ul>
         <a class="btn btn-ghost" href="#contact">相談する</a>
       </div>
       <div class="plan featured">
         <span class="badge">おすすめ</span>
-        <h3>プレミアム</h3>
-        <p class="for">服装・会話まで一緒に整え、1年以内の成婚を目指すプランです。</p>
+        <h3>スタンダードプラン</h3>
+        <p class="for">費用とサポートのバランスを重視した、ルーモのおすすめプラン。プロフィール作成から毎月の活動相談まで。</p>
         <div class="price"><dl>
           <dt>入会金</dt><dd>33,000<small>円</small></dd>
           <dt>登録料</dt><dd>33,000<small>円</small></dd>
-          <dt>月会費</dt><dd>15,400<small>円</small></dd>
+          <dt class="sum">初期費用合計</dt><dd class="sum">66,000<small>円</small></dd>
+          <dt>月会費</dt><dd>11,000<small>円</small></dd>
           <dt>お見合い料</dt><dd>0<small>円</small></dd>
           <dt>成婚料</dt><dd>198,000<small>円</small></dd>
         </dl></div>
         <ul>
-          <li><span class="ms">check</span>会員検索・申込み（無制限）、申込代行</li>
-          <li><span class="ms">check</span>プロフィール文の執筆</li>
+          <li><span class="ms">check</span>お見合い申込 月100件まで</li>
+          <li><span class="ms">check</span>プロフィール原稿の作成</li>
           <li><span class="ms">check</span>日程調整・お断りの代行</li>
-          <li><span class="ms">check</span>毎月の面談＋お見合い前の打ち合わせ</li>
+          <li><span class="ms">check</span>定期面談 月1回（30分）</li>
           <li><span class="ms">check</span>LINE相談</li>
-          <li><span class="ms">check</span>服装の助言・買い物の同行</li>
-          <li><span class="ms">check</span>交際中の定期面談・プロポーズの準備</li>
+          <li><span class="ms">check</span>服装の写真相談 月1回</li>
+          <li><span class="ms">check</span>交際中の相談 LINE＋定期面談</li>
         </ul>
         <a class="btn btn-primary" href="#contact">相談する</a>
       </div>
+      <div class="plan">
+        <span class="badge sub">手厚いサポート</span>
+        <h3>プレミアムプラン</h3>
+        <p class="for">第一印象や交際のサポートまで、より手厚く伴走してほしい方向け。</p>
+        <div class="price"><dl>
+          <dt>入会金</dt><dd>66,000<small>円</small></dd>
+          <dt>登録料</dt><dd>33,000<small>円</small></dd>
+          <dt class="sum">初期費用合計</dt><dd class="sum">99,000<small>円</small></dd>
+          <dt>月会費</dt><dd>15,400<small>円</small></dd>
+          <dt>お見合い料</dt><dd>0<small>円</small></dd>
+          <dt>成婚料</dt><dd>220,000<small>円</small></dd>
+        </dl></div>
+        <ul>
+          <li><span class="ms">check</span>お見合い申込 月150件まで</li>
+          <li><span class="ms">check</span>プロフィール原稿の作成＋追加添削</li>
+          <li><span class="ms">check</span>日程調整・お断りの代行</li>
+          <li><span class="ms">check</span>定期面談 月1回（60分）</li>
+          <li><span class="ms">check</span>LINE相談</li>
+          <li><span class="ms">check</span>服装の写真相談 月2回／買い物同行 1回</li>
+          <li><span class="ms">check</span>交際中の個別支援・プロポーズの計画作成</li>
+        </ul>
+        <a class="btn btn-ghost" href="#contact">相談する</a>
+      </div>
+    </div>
+
+    <div class="svc">
+      <h3 class="svc-title">サービス内容の比較</h3>
+      <div class="svc-scroll">
+      <table class="svc-table">
+        <thead><tr><th>サービス</th><th>20代応援</th><th class="hl">スタンダード</th><th>プレミアム</th></tr></thead>
+        <tbody>
+          <tr><th>お見合い申込</th><td>月50件</td><td class="hl">月100件</td><td>月150件</td></tr>
+          <tr><th>プロフィール原稿作成</th><td>対応</td><td class="hl">対応</td><td>対応＋追加添削</td></tr>
+          <tr><th>定期面談</th><td>2か月に1回<br>30分</td><td class="hl">月1回<br>30分</td><td>月1回<br>60分</td></tr>
+          <tr><th>LINE相談</th><td>対応</td><td class="hl">対応</td><td>対応</td></tr>
+          <tr><th>日程調整・お断り代行</th><td>対応</td><td class="hl">対応</td><td>対応</td></tr>
+          <tr><th>服装の写真相談</th><td>入会時1回</td><td class="hl">月1回</td><td>月2回</td></tr>
+          <tr><th>買い物同行</th><td class="na">対象外</td><td class="hl na">対象外</td><td>入会後1回<br>90分</td></tr>
+          <tr><th>交際中の相談</th><td>LINE</td><td class="hl">LINE＋定期面談</td><td>定期面談＋個別支援</td></tr>
+          <tr><th>プロポーズ支援</th><td>基本相談</td><td class="hl">準備の助言</td><td>個別計画作成</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <ul class="plan-notes">
+      <li>20代応援プランは、入会時に29歳以下の方が対象です。</li>
+      <li>LINEはいつでも送信いただけます。返信は仲人の対応時間（平日19:00〜22:00／土日10:00〜18:00）内に順次行います。</li>
+      <li>買い物同行は都城市内での実施を基本とします。商品代金・交通費などの実費は含まれません。</li>
+      <li>お見合いの成立やご成婚までの期間には個人差があり、結果をお約束するものではありません。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SIMULATION -->
+<section class="sec alt" id="simulation">
+  <div class="wrap">
+    <div class="sh center">
+      <span class="k">費用の目安</span>
+      <h2>成婚までの総額を、先に確認できます。</h2>
+      <div class="formula"><span>初期費用</span><i>＋</i><span>月会費 × 活動月数</span><i>＋</i><span>成婚料</span></div>
+      <p class="lead nb">お見合い料・更新料は0円。表示はすべて税込です。</p>
+      <p class="lead nb">早い方は3か月ほど、多くの方は1年以内が目安です。</p>
+    </div>
+    <div class="sim">
+      <div class="sim-card">
+        <div class="sim-head"><span class="ms">calendar_month</span><span class="t"><b>3か月</b>で成婚した場合</span></div>
+        <dl>
+          <dt>20代応援</dt><dd>246,400<small>円</small></dd>
+          <dt class="hl">スタンダード</dt><dd class="hl">297,000<small>円</small></dd>
+          <dt>プレミアム</dt><dd>365,200<small>円</small></dd>
+        </dl>
+      </div>
+      <div class="sim-card">
+        <div class="sim-head"><span class="ms">calendar_month</span><span class="t"><b>6か月</b>で成婚した場合</span></div>
+        <dl>
+          <dt>20代応援</dt><dd>272,800<small>円</small></dd>
+          <dt class="hl">スタンダード</dt><dd class="hl">330,000<small>円</small></dd>
+          <dt>プレミアム</dt><dd>411,400<small>円</small></dd>
+        </dl>
+      </div>
+      <div class="sim-card">
+        <div class="sim-head"><span class="ms">calendar_month</span><span class="t"><b>12か月</b>で成婚した場合</span></div>
+        <dl>
+          <dt>20代応援</dt><dd>325,600<small>円</small></dd>
+          <dt class="hl">スタンダード</dt><dd class="hl">396,000<small>円</small></dd>
+          <dt>プレミアム</dt><dd>503,800<small>円</small></dd>
+        </dl>
+      </div>
     </div>
     <ul class="plan-notes">
-      <li>30歳以上の方には、プレミアムをおすすめしています。スタンダードは、サポートを最小限にして費用を抑えたい方向けの内容です。</li>
-      <li>成婚料は、ご婚約が決まった時点でのみ発生します。途中退会の際にはかかりません。</li>
-      <li>IBJのシステム利用料は月会費に含まれています。</li>
+      <li>成婚料は、ご成婚退会（ご婚約）の時点で発生します。途中退会の場合はかかりません。</li>
+      <li>プロフィール写真の撮影料、お見合い・デートの交通費や飲食代、衣類の購入費などは、別途ご本人のご負担となります。</li>
+      <li>活動期間は目安です。活動のペースやご希望の条件により、3か月ほどでご成婚に至る方もいれば、1年以上かかる方もいます。期間や成婚をお約束するものではありません。</li>
     </ul>
+  </div>
+</section>
+
+<!-- CONSULT -->
+<section class="sec" id="consult">
+  <div class="wrap">
+    <div class="sh center">
+      <span class="k">無料相談でわかること</span>
+      <h2><span class="l">あなたの希望条件で、どんな出会いが考えられるか。</span><span class="l">一緒に確認しましょう。</span></h2>
+    </div>
+    <div class="consult">
+      <ul class="consult-list">
+        <li><span class="ic"><span class="ms">hearing</span></span><div><b>希望するお相手像・結婚生活のヒアリング</b><span>これまでの婚活や、望む暮らしをお伺いします</span></div></li>
+        <li><span class="ic"><span class="ms">person_search</span></span><div><b>活動の見通し</b><span>IBJの会員データで確認できる範囲で、ご希望に近い方の層をご説明します</span></div></li>
+        <li><span class="ic"><span class="ms">map</span></span><div><b>条件や地域に合う婚活の進め方</b><span>対面・オンラインの使い分け、申込みの考え方など</span></div></li>
+        <li><span class="ic"><span class="ms">payments</span></span><div><b>料金と活動費用の説明</b><span>プランごとの初期費用・月会費・成婚料と、別途かかる実費</span></div></li>
+        <li><span class="ic"><span class="ms">support_agent</span></span><div><b>仲人のサポート内容</b><span>面談の頻度、LINE相談の範囲、外見づくりの相談方法</span></div></li>
+      </ul>
+      <div class="consult-side">
+        <div class="consult-box">
+          <span class="ms">hourglass_empty</span>
+          <b>その場でのご入会判断は求めません</b>
+          <p>相談のみで終えていただいて構いません。ご家族と相談し、納得されてからお申し込みください。</p>
+          <a class="btn btn-primary" href="#contact">無料相談を予約する</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -741,12 +903,13 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <div class="sh center">
       <span class="k">ご入会の流れ</span>
       <h2><span class="l">ご相談からご成婚まで、</span><span class="l">1年以内を目安に進めます。</span></h2>
+      <p class="lead">期間は目安です。活動のペースによって、3か月ほどでご成婚される方もいます。</p>
     </div>
     <div class="tl">
       <div class="tl-track"></div>
       <ol>
         <li><span class="when">活動前</span><div class="node"><span class="ms">chat</span></div><span class="n">01</span><h3>無料相談</h3><p>60分。前半はお話を伺い、後半で会員検索と活動計画をご提案します。</p></li>
-        <li><span class="when">約2週間</span><div class="node"><span class="ms">edit_note</span></div><span class="n">02</span><h3>ご入会</h3><p>必要書類の提出、プロフィール作成、写真撮影を進めます。</p></li>
+        <li><span class="when">約2週間</span><div class="node"><span class="ms">edit_note</span></div><span class="n">02</span><h3>ご入会</h3><p>必要書類の提出、プロフィール原稿の作成、写真撮影を進めます。</p></li>
         <li><span class="when">1〜3か月</span><div class="node"><span class="ms">handshake</span></div><span class="n">03</span><h3>お見合い</h3><p>月2〜4件が目安。日程と場所の手配は仲人が行います。</p></li>
         <li><span class="when">3〜6か月</span><div class="node"><span class="ms">local_cafe</span></div><span class="n">04</span><h3>仮交際</h3><p>複数の方と並行して会えます。デート後に短い振り返りを行います。</p></li>
         <li><span class="when">6〜10か月</span><div class="node"><span class="ms">favorite</span></div><span class="n">05</span><h3>真剣交際</h3><p>お一人に絞り、結婚後の生活について具体的に話し合います。</p></li>
@@ -799,8 +962,10 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
       <details><summary><span class="ms">help</span>平日の日中は仕事で動けません。</summary><div class="a">面談は平日19時以降と土日が中心です。お見合いも土日や平日夜に設定でき、オンラインでも行えます。</div></details>
       <details><summary><span class="ms">help</span>宮崎で活動して、出会いの数は足りますか。</summary><div class="a">IBJは全国約11万人のネットワークです。お住まいの地域に関わらず、全国の会員にお申し込みでき、全国の会員からお申し込みを受けられます。無料相談で、ご希望の条件に合う方が何人いるかを画面でご確認いただけます。</div></details>
       <details><summary><span class="ms">help</span>知人に活動を知られたくありません。</summary><div class="a">プロフィールはIBJの会員のみが閲覧でき、検索エンジンには表示されません。写真の公開範囲を限定することもできます。</div></details>
-      <details><summary><span class="ms">help</span>どのくらいの期間で結婚できますか。</summary><div class="a">IBJ全体では、ご入会からご成婚までの平均は約1年です。ルーモでも1年以内を目安に計画を立てますが、個人差があり、結婚をお約束するものではありません。</div></details>
-      <details><summary><span class="ms">help</span>途中でやめることはできますか。</summary><div class="a">いつでも退会できます。退会月の月会費以外に費用はかからず、成婚料も発生しません。休会制度（月3,300円）もあります。</div></details>
+      <details><summary><span class="ms">help</span>どのくらいの期間で結婚できますか。</summary><div class="a">IBJ全体では、ご入会からご成婚までの平均は約1年です。ルーモでも1年以内を目安に計画を立てますが、活動のペースやご希望の条件によっては、3か月ほどでご成婚される方もいます。個人差があり、結婚をお約束するものではありません。</div></details>
+      <details><summary><span class="ms">help</span>どのプランを選べばよいですか。</summary><div class="a">多くの方にはスタンダードをおすすめしています。費用を抑えて始めたい20代の方は20代応援プラン、第一印象や交際のサポートまで手厚く伴走してほしい方はプレミアムをご検討ください。無料相談で、ご希望に合わせてご案内します。</div></details>
+      <details><summary><span class="ms">help</span>LINEの返信はいつ来ますか。</summary><div class="a">LINEはいつでも送信いただけます。返信は仲人の対応時間（平日19:00〜22:00／土日10:00〜18:00）内に順次行います。</div></details>
+      <details><summary><span class="ms">help</span>途中でやめることはできますか。</summary><div class="a">いつでも退会できます。退会月の月会費以外に費用はかからず、成婚料も発生しません。休会制度の条件は、無料相談でご確認ください。</div></details>
       <details><summary><span class="ms">help</span>担当は女性と男性、どちらになりますか。</summary><div class="a">代表の女性仲人が活動全体を担当し、男性仲人がサポートに入ります。相談内容に応じて、どちらにもお話しいただけます。</div></details>
     </div>
   </div>
@@ -832,18 +997,18 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
     <div>
       <div class="sh">
         <span class="k">無料相談のご予約</span>
-        <h2><span class="l">まずは60分、</span><span class="l">お話を聞かせてください。</span></h2>
+        <h2><span class="l">まずは60分、</span><span class="l">希望条件から一緒に考えます。</span></h2>
       </div>
       <ul class="points">
         <li><span class="ms">check</span>ご入会の判断は、その場では求めません</li>
-        <li><span class="ms">check</span>相談所の仕組みを知りたい段階でも結構です</li>
+        <li><span class="ms">check</span>料金・サポート内容・活動の見通しをご説明します</li>
         <li><span class="ms">check</span>アプリと迷っている方も、お気軽にどうぞ</li>
       </ul>
       <div class="ways">
         <a class="btn btn-line" href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.74 2 10.3c0 2.63 1.5 4.97 3.85 6.5-.1.9-.6 3.1-.68 3.56-.1.6.22.6.47.44.2-.13 3.1-2.1 4.36-2.95.65.1 1.32.15 2 .15 5.52 0 10-3.74 10-8.3S17.52 2 12 2z"/></svg>LINEで予約する</a>
         <a class="btn btn-ghost" href="tel:0986000000">電話で予約する　0986-00-0000</a>
       </div>
-      <p class="micro">LINEはいつでも送信いただけます（返信は順次いたします）。電話は平日19〜22時、土日10〜18時。</p>
+      <p class="micro">LINEはいつでも送信いただけます（返信は対応時間内に順次）。電話は平日19〜22時、土日10〜18時。</p>
     </div>
     <form action="#" method="post" onsubmit="alert('※デモです。送信先（フォームサービス）を設定してください。');return false;">
       <div class="f"><label>お名前（ニックネーム可）<small>必須</small></label><input type="text" name="name" placeholder="例：なかの" required></div>

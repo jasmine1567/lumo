@@ -5,11 +5,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>ルーモ結婚相談所｜宮崎県都城市のIBJ加盟 結婚相談所（20代・30代）</title>
-<meta content="宮崎県都城市の結婚相談所。IBJ加盟、紹介可能会員約11万人。男女2名の仲人が、日程調整やお断りの連絡、プロフィール原稿の作成を担当。20代応援プランは月会費8,800円から。平日夜・土日の無料相談に対応。" name="description"/>
+<meta content="宮崎県都城市の結婚相談所。IBJ加盟、紹介可能会員10万人以上。男女2名の仲人が、日程調整やお断りの連絡、プロフィール原稿の作成を担当。20代応援プランは月会費8,800円から。平日夜・土日の無料相談に対応。" name="description"/>
 <meta content="ルーモ結婚相談所｜宮崎県のIBJ正規加盟 結婚相談所" property="og:title"/>
 <meta content="日程調整もお断りの連絡も、仲人が担当。あなたはお相手選びに集中できます。" property="og:description"/>
 <meta content="images/ogp.jpg" property="og:image"/>
 <meta content="website" property="og:type"/>
+<meta content="https://jasmine1567.github.io/lumo/" property="og:url"/>
 <link href="images/favicon.png" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -206,22 +207,31 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .member{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
 .member .img{aspect-ratio:1/1;border-radius:0}
 .member .img img{object-position:50% 22%}
-.member .img.f img{object-position:50% 8%}
+.member .img.female img{object-position:50% 8%}
 .member .body{padding:30px 30px 32px;display:flex;flex-direction:column;flex:1}
-.tag{display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.14em;color:#fff;background:var(--accent);border-radius:3px;padding:4px 10px;margin-bottom:12px}
-.tag.sub{color:var(--ink);background:transparent;border:1px solid var(--ink)}
-.member h3{font-size:26px;line-height:1.3}
-.kana{font-size:12px;color:var(--ink-2);letter-spacing:.1em;margin-bottom:12px}
-.member .msg{font-family:var(--serif);font-size:17px;color:var(--accent-dk);margin:2px 0 12px;letter-spacing:.04em}
+.tag{display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.14em;line-height:1.6;color:#fff;background:var(--accent);border:1px solid var(--accent);border-radius:3px;padding:3px 10px;margin-bottom:12px}
+.tag.sub{color:var(--ink);background:transparent;border-color:var(--ink)}
+.member h3{font-size:26px;line-height:1.3;min-height:34px}
+.kana{font-size:12px;color:var(--ink-2);letter-spacing:.1em;margin-bottom:12px;min-height:1.9em;white-space:nowrap}
+.member .msg{font-family:var(--serif);font-size:17px;color:var(--accent-dk);margin:2px 0 12px;letter-spacing:.04em;min-height:1.9em}
 .member p{font-size:14.5px;color:var(--ink-2);margin-bottom:12px}
 .exp{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 18px}
 .exp div{background:var(--bg-2);border-radius:8px;padding:14px 10px;text-align:center}
 .exp .ms{font-size:26px;color:var(--accent);margin-bottom:6px}
-.exp b{display:block;font-size:13px;line-height:1.5;margin-bottom:4px}
-.exp span{display:block;font-size:11.5px;color:var(--ink-2);line-height:1.6}
+.exp b{display:block;font-size:13px;line-height:1.5;margin-bottom:4px;min-height:3em}
+.exp span{display:block;font-size:11.5px;color:var(--ink-2);line-height:1.6;min-height:3.2em}
 .member ul li{position:relative;padding-left:18px;font-size:14px;color:var(--ink-2);margin-bottom:5px}
 .member ul li::before{content:"";position:absolute;left:0;top:.95em;width:8px;height:1px;background:var(--accent)}
 /* team note */
+.greeting{margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:44px 48px}
+.greeting .k{display:block;font-family:var(--serif);font-size:13px;letter-spacing:.3em;color:var(--accent);margin-bottom:14px;font-weight:600}
+.greeting h3{font-size:clamp(20px,2.4vw,26px);margin-bottom:22px}
+.greeting h3 .l{display:block;white-space:nowrap}
+.greeting-body{max-width:760px}
+.greeting-body p{font-size:15px;color:var(--ink-2);margin-bottom:14px}
+.sign{display:flex;align-items:baseline;justify-content:flex-end;gap:14px;margin-top:10px;border-top:1px solid var(--line);padding-top:18px}
+.sign span{font-size:12.5px;color:var(--ink-2);letter-spacing:.08em}
+.sign b{font-family:var(--serif);font-size:20px;font-weight:600;letter-spacing:.12em}
 .team-note{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .team-note li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;display:flex;align-items:center;gap:12px;font-size:14px}
 .team-note li .ms{color:var(--accent);font-size:22px;flex:none}
@@ -289,7 +299,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 
 /* consult */
 .consult{display:grid;grid-template-columns:1.3fr .9fr;gap:28px;align-items:start}
-.consult-list li{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.consult-list li{display:flex;gap:16px;align-items:flex-start;padding:18px 0;min-height:96px;border-bottom:1px solid var(--line)}
 .consult-list li:first-child{border-top:1px solid var(--line)}
 .consult-list .ic{flex:none;width:44px;height:44px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center}
 .consult-list .ic .ms{font-size:22px}
@@ -316,6 +326,24 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .tl p{font-size:13px;color:var(--ink-2);line-height:1.7}
 
 /* reports */
+body[data-results="ibj"] #voices{display:none}
+body[data-results="voices"] #ibj-data{display:none}
+/* IBJ data */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px 24px;display:flex;flex-direction:column;min-height:196px}
+.stat .lbl{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--ink-2);margin-bottom:10px;min-height:1.9em}
+.stat .num{font-family:var(--serif);font-size:40px;font-weight:600;line-height:1.1;color:var(--ink);letter-spacing:.02em;white-space:nowrap}
+.stat .num small{font-size:16px;margin-left:4px;letter-spacing:.06em}
+.stat .num em{font-style:normal;color:var(--accent-dk)}
+.stat .sub{font-size:13px;color:var(--ink-2);margin-top:auto;padding-top:14px;line-height:1.7}
+.stats-src{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;column-gap:24px;row-gap:6px;font-size:12.5px;color:var(--ink-2);line-height:1.8}
+.stats-src .t{font-weight:700;letter-spacing:.14em;color:var(--ink);white-space:nowrap;grid-row:1/3}
+.stats-src ul li{position:relative;padding-left:14px}
+.stats-src ul li::before{content:"";position:absolute;left:0;top:.95em;width:6px;height:1px;background:var(--accent)}
+.stats-src p{grid-column:2;margin:0}
+.stats-box{margin-top:28px;background:var(--accent-soft);border-radius:var(--radius);padding:24px 28px;display:flex;gap:16px;align-items:flex-start}
+.stats-box .ms{color:var(--accent);font-size:26px;flex:none;margin-top:2px}
+.stats-box p{font-size:14.5px;color:var(--ink);line-height:1.9}
 .reports{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .report{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;position:relative}
 .report .who{display:flex;align-items:center;gap:14px;margin-bottom:16px}
@@ -392,7 +420,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   .hero-photo{position:relative;width:100%;order:1;aspect-ratio:4/3}
   .hero-photo img{object-position:30% 30%}
   .hero-photo::before{background:linear-gradient(180deg,rgba(251,249,244,0) 55%,#FBF9F4 100%)}
-  .g3,.plans,.reports,.team-note{grid-template-columns:1fr 1fr}
+  .g3,.plans,.reports,.team-note,.stats{grid-template-columns:1fr 1fr}
   .consult{grid-template-columns:1fr}
   .sim{grid-template-columns:1fr}
   .team{grid-template-columns:1fr}
@@ -410,7 +438,12 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   body{font-size:15px}
   .nav ul,.nav .btn{display:none}
   .menu-btn{display:flex}
-  .g3,.plans,.reports,.team-note,.sim{grid-template-columns:1fr}
+  .g3,.plans,.reports,.team-note,.sim,.stats{grid-template-columns:1fr}
+  .stat{min-height:0}
+  .stat .num{font-size:34px}
+  .stats-src{grid-template-columns:1fr}
+  .stats-src .t{grid-row:auto}
+  .stats-src p{grid-column:1}
   .plan .for{height:auto}
   .svc-table{min-width:0;font-size:12px}
   .formula{white-space:normal;justify-content:center;flex-wrap:wrap;gap:8px;font-size:13.5px;padding:12px 16px}
@@ -453,17 +486,30 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
   .about-grid > div{padding:26px 22px}
   .about-grid h3,.card h3,.plan h3,.tl h3{white-space:normal}
   .member .body{padding:22px 20px 26px}
+  .greeting{padding:28px 22px}
+  .greeting h3{font-size:19px}
+  .exp b,.exp span{min-height:0}
   .exp{grid-template-columns:1fr}
   .area ul li{grid-template-columns:32px 90px 1fr}
   h2 .l{white-space:normal;display:block}
 }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"ルーモ結婚相談所","description":"宮崎県都城市を拠点とするIBJ正規加盟の結婚相談所。20代・30代向け。全国オンライン対応。","url":"https://jasmine1567.github.io/lumo/","image":"https://jasmine1567.github.io/lumo/images/ogp.jpg","telephone":"+81-986-00-0000","address":{"@type":"PostalAddress","addressRegion":"宮崎県","addressLocality":"都城市","streetAddress":"○○町○-○","addressCountry":"JP"},"areaServed":"JP","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"19:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"10:00","closes":"18:00"}],"priceRange":"¥¥"}
+</script>
 </head>
-<body>
+<body data-results="ibj">
+<!--
+  実績表示の切替（data-results の値を変更してください）
+    ibj    … IBJの実績データを表示し、成婚者の声は非表示（開業〜実績が集まるまで）
+    voices … 成婚者の声を表示し、IBJの実績データは非表示
+    both   … 両方を表示
+  成婚者の声を公開する際は、#voices 内の SAMPLE タグ（<span class="sample">）と文面を実データに差し替えてください。
+-->
 <header>
 <div class="wrap nav">
 <a class="logo" href="#top">
-<img alt="" src="images/logo-simple.png"/>
+<img alt="ルーモ結婚相談所" src="images/logo-simple.png"/>
 <span class="txt">ルーモ結婚相談所<small>IBJ正規加盟店｜宮崎県</small></span>
 </a>
 <ul>
@@ -501,7 +547,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </div>
 <div class="scroll"><span></span>SCROLL</div>
 </div>
-<div class="hero-photo"><img alt="" src="images/hero.jpg"/></div>
+<div class="hero-photo"><img alt="穏やかな雰囲気で話す男女" src="images/hero.jpg"/></div>
 </section>
 <!-- HANDOFF -->
 <section class="handoff-sec" id="handoff">
@@ -533,9 +579,9 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </section>
 <div class="numbers">
 <div class="wrap">
-<div><span class="ms">groups</span><b>約11万人</b><span>IBJネットワークの会員数</span></div>
+<div><span class="ms">groups</span><b>10万人以上</b><span>IBJネットワークの会員数</span></div>
 <div><span class="ms">verified_user</span><b>独身証明書 必須</b><span>全会員が提出するIBJの入会条件</span></div>
-<div><span class="ms">videocam</span><b>対面・オンライン</b><span>宮崎県内どこからでも相談可</span></div>
+<div><span class="ms">videocam</span><b>対面・オンライン</b><span>全国どこからでも相談・活動可</span></div>
 <div><span class="ms">nightlight</span><b>平日 19時〜</b><span>働きながら活動できる時間帯</span></div>
 </div>
 </div>
@@ -636,7 +682,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <div class="card"><div class="ic"><span class="ms">groups</span></div><h3 style="word-break:keep-all;overflow-wrap:anywhere">男女2名の​仲人体​制</h3>
 <ul><li style="word-break:keep-all;overflow-wrap:anywhere">女性仲人と​男性仲人、​それぞれの​視点から​助言します</li><li style="word-break:keep-all;overflow-wrap:anywhere">お見合い・交際・第一印象で、​異性側の​受け止め方を​確認できます</li><li style="word-break:keep-all;overflow-wrap:anywhere">ご相談の​内容に​応じて、​担当する​仲人を​ご案内します</li></ul></div>
 <div class="card"><div class="ic"><span class="ms">checkroom</span></div><h3 style="word-break:keep-all;overflow-wrap:anywhere">第一印象を​整える​サポート</h3>
-<ul><li style="word-break:keep-all;overflow-wrap:anywhere">眼鏡専門店・アパレル販売の​経験を​持つ​仲人が​担当します</li><li style="word-break:keep-all;overflow-wrap:anywhere">髪型・​服装・眼鏡・プロフィール写真の​相談に​対応します</li><li style="word-break:keep-all;overflow-wrap:anywhere">対応内容と​回数は、​プランの​条件に​沿って​ご案内します</li></ul></div>
+<ul><li style="word-break:keep-all;overflow-wrap:anywhere">眼鏡専門店・アパレル販売の​経験を​持つ​仲人が​担当します</li><li style="word-break:keep-all;overflow-wrap:anywhere">女性には​女性仲人が、​男性には​男性仲人が、​同性の​視点で​具体的に​助言します</li><li style="word-break:keep-all;overflow-wrap:anywhere">対応内容と​回数は、​プランの​条件に​沿って​ご案内します</li></ul></div>
 <div class="card"><div class="ic"><span class="ms">query_stats</span></div><h3 style="word-break:keep-all;overflow-wrap:anywhere">活動データを​もとに​した​振り返り</h3>
 <ul><li style="word-break:keep-all;overflow-wrap:anywhere">IT業界の​経験を​持つ​仲人が、​活動の​記録を​一緒に​読み解きます</li><li style="word-break:keep-all;overflow-wrap:anywhere">希望条件・申込状況・​お見合いの​成立状況から、​改善できる​点を​考えます</li><li style="word-break:keep-all;overflow-wrap:anywhere">励ましだけで​終わらせず、​次の​一手を​具体的に​決めます</li></ul></div>
 </div>
@@ -648,17 +694,17 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <div class="sh">
 <span class="k">カウンセラー</span>
 <h2 style="word-break:keep-all;overflow-wrap:anywhere">女性と​男性、​2名の​仲人が​担当します。</h2>
-<p class="lead" style="word-break:keep-all;overflow-wrap:anywhere">外見づくりに​強い​女性仲人と、​データと​論理で​活動計画を​組み立てる​男性仲人。​ご相談の​内容に​応じて、​どちらにも​お話しいただけます。</p>
+<p class="lead" style="word-break:keep-all;overflow-wrap:anywhere">外見づくりに​強い​女性仲人と、​清潔感づくりと​データに​強い​男性仲人。​同性ならではの​視点で、​それぞれの​分野に​特化した​助言を​お届けします。​ご相談の​内容に​応じて、​どちらにも​お話しいただけます。</p>
 </div>
 <div class="team">
 <div class="member">
-<div class="img f"><img alt="鶴田 幸奈" src="images/counselor-f.jpg"/></div>
+<div class="img female"><img alt="鶴田 幸奈" src="images/counselor-f.jpg"/></div>
 <div class="body">
 <span class="tag">代表仲人</span>
 <h3>鶴田 幸奈</h3>
 <div class="kana">つるた ゆきな ／ IBJ認定婚活カウンセラー</div>
 <p class="msg" style="word-break:keep-all;overflow-wrap:anywhere">「第一印象は、​整える​ことで​変えられます。」</p>
-<p style="word-break:keep-all;overflow-wrap:anywhere">眼鏡専門店と​アパレルの​販売職で、​長年お客様の​「似合う」を​提案してきました。​顔立ちに​合う​眼鏡、​体型と​場面に​合う​服装は、​お見合いの​印象を​左右する​要素です。​その​経験を、​会員お一人​おひとりの​外見づくりに​生かしています。</p>
+<p style="word-break:keep-all;overflow-wrap:anywhere">眼鏡専門店と​アパレルの​販売職で、​長年お客様の​「似合う」を​提案してきました。​顔立ちに​合う​眼鏡、​体型と​場面に​合う​服装は、​お見合いの​印象を​左右する​要素です。​その​経験を、​会員お一人​おひとりの​外見づくりに​生かしています。​髪型や​眼鏡の​選び方から、​お見合い​当日の​服装、​交際中の​デートの​装いまで、​写真を​見ながら​一緒に​整えていきます。</p>
 <div class="exp">
 <div><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">eyeglasses</span><b style="word-break:keep-all;overflow-wrap:anywhere">眼鏡専門店での​販売経験</b><span style="word-break:keep-all;overflow-wrap:anywhere">顔立ちに​合うフレーム選びと、​印象の​設計</span></div>
 <div><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">checkroom</span><b style="word-break:keep-all;overflow-wrap:anywhere">アパレルでの​販売経験</b><span style="word-break:keep-all;overflow-wrap:anywhere">体型・年代・​場面に​合う​服装の​提案と​買い物同行</span></div>
@@ -677,16 +723,16 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <span class="tag sub">サポート仲人</span>
 <h3>中野 裕亮</h3>
 <div class="kana">なかの ひろあき ／ IBJ認定婚活カウンセラー</div>
-<p class="msg" style="word-break:keep-all;overflow-wrap:anywhere">「感覚ではなく、​根拠の​ある​計画で​進めます。」</p>
-<p style="word-break:keep-all;overflow-wrap:anywhere">IT企業で​培った​論理的な​考え方を​もとに、​会員の​方の​活動データ​（申込みの​傾向、​お見合いの​成立率、​交際の​進み方）を​読み解き、​次に​何を​すべきかを​具体的に​お伝えします。​お話を​じっくり伺い、​ご希望に​沿った​計画に​落とし込むのが​役割です。</p>
+<p class="msg" style="word-break:keep-all;overflow-wrap:anywhere">「清潔感は、​才能ではなく​習慣です。」</p>
+<p style="word-break:keep-all;overflow-wrap:anywhere">アラフォー世代の​男性仲人です。​肌・髪・眉・​服装・香りを​自分で​試し続け、​年齢より​若く​見ていただく​ことが​増えました。​特別な​ことではなく、​順番と​習慣を​知っているだけです。​男性の​婚活では、​清潔感が​スタートラインに​立てるか​どうかを​決めます。​同じ​方法で、​あなたの​第一印象も​変えられます。​活動計画は、​IT企業で​培った​数字の​見方で​組み立てます。</p>
 <div class="exp">
+<div><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">face_retouching_natural</span><b style="word-break:keep-all;overflow-wrap:anywhere">清潔感づくりの​実践ノウハウ</b><span style="word-break:keep-all;overflow-wrap:anywhere">肌・髪・眉・​服装・香りを、​無理なく​続ける​方法</span></div>
 <div><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">query_stats</span><b style="word-break:keep-all;overflow-wrap:anywhere">データに​基づく​活動計画</b><span style="word-break:keep-all;overflow-wrap:anywhere">申込み・成立率の​傾向から、​月ごとの​計画を​設計</span></div>
-<div><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">psychology</span><b style="word-break:keep-all;overflow-wrap:anywhere">男性側の​視点を​言語化</b><span style="word-break:keep-all;overflow-wrap:anywhere">男性が​どう​受け取り、​何を​考えているかを​具体的に​説明</span></div>
-<div><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">hearing</span><b style="word-break:keep-all;overflow-wrap:anywhere">要望を​聞き取る​力</b><span style="word-break:keep-all;overflow-wrap:anywhere">思いを​伺ったうえで、​無理の​ない​進め方を​一緒に​決める</span></div>
+<div><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">psychology</span><b style="word-break:keep-all;overflow-wrap:anywhere">男性側の​視点を​言語化</b><span style="word-break:keep-all;overflow-wrap:anywhere">男性の​受け止め方と​考えを、​具体的に​説明</span></div>
 </div>
 <ul>
+<li style="word-break:keep-all;overflow-wrap:anywhere">男性の​方には、​今日から​変えられる​清潔感の​整え方を​優先順位つきで​具体的に​お伝えします</li>
 <li style="word-break:keep-all;overflow-wrap:anywhere">「な​ぜ​申込みが​通らないか」を​感覚ではなく、​数字と​理由で​説明します</li>
-<li style="word-break:keep-all;overflow-wrap:anywhere">男性の​方には、​服装・会話・初回デートの​組み立てを​同じ​目線で​具体的に</li>
 <li style="word-break:keep-all;overflow-wrap:anywhere">女性の​方には、​男性側の​受け止め方を​そのまま​お伝えします</li>
 </ul>
 </div>
@@ -694,9 +740,19 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </div>
 <ul class="team-note">
 <li style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">schedule</span>平日 19:00〜22:00 ／ 土日 10:00〜18:00</li>
-<li style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">meeting_room</span>個室スペース​（都城市内）​または​オンライン</li>
-<li style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">chat</span>LINEは​いつでも​送信可​（返信は​対応時間内）</li>
+<li style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">meeting_room</span>個室​（都城市内）​または​オンライン​（全国）</li>
+<li style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">chat</span>LINE相談は​24時間送信可</li>
 </ul>
+<div class="greeting">
+<span class="k">代表からのご挨拶</span>
+<h3><span class="l">「結婚相談所は敷居が高い」を、</span><span class="l">終わらせたくて始めました。</span></h3>
+<div class="greeting-body">
+<p style="word-break:keep-all;overflow-wrap:anywhere">販売の​仕事で​多くの​お客様と​接する​なかで、​「自分に​自信が​ない」と​おっしゃる​方が、​眼鏡や​服装を​少し​変えただけで​表情まで​明るくなる​場面を​何度も​見てきました。​第一印象は、​生まれ​持った​ものではなく、​整えられる​ものです。</p>
+<p style="word-break:keep-all;overflow-wrap:anywhere">一方で、​地方で​暮らす20代・30代の​方に​とって、​出会いの​場は​年々​少なくなっています。​アプリを​試しても、​連絡や​日程調整に​疲れて​辞めてしまう​方も​少なく​ありません。​「しんどい​作業は​仲人が​引き受け、​本人は​出会いに​集中する」。​その​形を、​無理の​ない​費用で​提供したいと​考え、​ルーモを​立ち上げました。</p>
+<p style="word-break:keep-all;overflow-wrap:anywhere">無料相談で​契約を​お願いする​ことは​ありません。​まずは、​今の​あなたの​条件で​どんな​出会いが​あるのかを、​一緒に​画面で​確かめる​ことから​始めましょう。</p>
+</div>
+<div class="sign"><span>ルーモ結婚相談所 代表仲人</span><b>鶴田 幸奈</b></div>
+</div>
 </div>
 </section>
 <!-- PLANS -->
@@ -899,8 +955,36 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </div>
 </div>
 </section>
-<!-- REPORTS -->
-<section class="sec">
+<!-- IBJ DATA（実績が集まるまでの表示） -->
+<section class="sec" id="ibj-data">
+<div class="wrap">
+<div class="sh center">
+<span class="k">IBJの実績</span>
+<h2 style="word-break:keep-all;overflow-wrap:anywhere"><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">ルーモの​​会員が​​活動する、</span><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">IBJネットワークの​​数字。</span></h2>
+<p class="lead" style="word-break:keep-all;overflow-wrap:anywhere">ルーモの​会員は、​全国の​加盟相談所と​同じ​IBJの​システムで​活動します。</p>
+</div>
+<div class="stats">
+<div class="stat"><span class="lbl" style="word-break:keep-all;overflow-wrap:anywhere">年間成婚組数​（2025年）</span><span class="num">20,970<small>組</small></span><span class="sub" style="word-break:keep-all;overflow-wrap:anywhere">IBJ加盟相談所の​会員同士で​成婚した​組数。​過去最多を​更新しました。</span></div>
+<div class="stat"><span class="lbl" style="word-break:keep-all;overflow-wrap:anywhere">国内の​結婚に​占める​割合</span><span class="num">約4.3<small>%</small></span><span class="sub" style="word-break:keep-all;overflow-wrap:anywhere">日本で​結婚する​約23組に​1組が、​IBJでの​出会いです。</span></div>
+<div class="stat"><span class="lbl" style="word-break:keep-all;overflow-wrap:anywhere">登録会員数</span><span class="num">10万<small>人以上</small></span><span class="sub" style="word-break:keep-all;overflow-wrap:anywhere">2025年8月に​10万人を​突破。​全国の​会員に​お申し込みが​できます。</span></div>
+<div class="stat"><span class="lbl" style="word-break:keep-all;overflow-wrap:anywhere">成婚者の​在籍期間​（中央値）</span><span class="num">約9<small>か月</small></span><span class="sub" style="word-break:keep-all;overflow-wrap:anywhere">入会から​ご成婚退会までの​期間。​早い方は​3か​月ほどで​成婚されています。</span></div>
+<div class="stat"><span class="lbl" style="word-break:keep-all;overflow-wrap:anywhere">成婚者の​お見合い回数</span><span class="num">11<small>回</small></span><span class="sub" style="word-break:keep-all;overflow-wrap:anywhere">成婚した​方の​平均回数。​交際に​入ってから​成婚までは​約4か月です。</span></div>
+<div class="stat"><span class="lbl" style="word-break:keep-all;overflow-wrap:anywhere">成婚年齢の​ピーク</span><span class="num">女性30<small>歳</small>・男性34<small>歳</small></span><span class="sub" style="word-break:keep-all;overflow-wrap:anywhere">最も​多い​成婚年齢。​20代の​入会者は、​過去5年で​女性約1.9倍・男性約3.4倍に​増加。</span></div>
+</div>
+<div class="stats-box"><span class="ms">verified_user</span><p style="word-break:keep-all;overflow-wrap:anywhere">IBJの​会員は​全員、​独身証明書・​本人確認書類の​提出が​入会条件です。​ルーモの​会員も​同じ​審査を​経て​登録され、​同じ​ネットワークの​中で​活動します。</p></div>
+<div class="stats-src">
+<span class="t">出典</span>
+<ul>
+<li style="word-break:keep-all;overflow-wrap:anywhere">株式会社IBJ​「2025年 IBJ成婚白書」​（2026年4月）</li>
+<li style="word-break:keep-all;overflow-wrap:anywhere">株式会社IBJ プレスリリース​「年間成婚組数が​2万組を​突破」​（2026年2月）</li>
+<li style="word-break:keep-all;overflow-wrap:anywhere">IBJ公式サイト​「数字で​IBJチェック」</li>
+</ul>
+<p style="word-break:keep-all;overflow-wrap:anywhere">数値は​いずれも​IBJ全体の​実績です。</p>
+</div>
+</div>
+</section>
+<!-- VOICES（実績が集まってから表示：body の data-results を変更） -->
+<section class="sec" id="voices">
 <div class="wrap">
 <div class="sh center">
 <span class="k">ご成婚された方の声</span>
@@ -934,12 +1018,13 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <div class="wrap">
 <div class="sh center">
 <span class="k">よくあるご質問</span>
-<h2 style="word-break:keep-all;overflow-wrap:anywhere">ご相談の​前に、​よく​聞かれる​こと。</h2>
+<h2 style="word-break:keep-all;overflow-wrap:anywhere"><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">ご相談の​​前に、</span><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">よく​​聞かれる​​こと。</span></h2>
 </div>
 <div class="faq">
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>無料相談で、​入会を​勧められますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">料金の​ご説明は​しますが、​その​場での​判断は​求めません。​相談のみで​終えていただいて​構いません。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>平日の​日中は​仕事で​動けません。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">面談は​平日19時以降と​土日が​中心です。​お見合いも​土日や​平日夜に​設定でき、​オンラインでも​行えます。</div></details>
-<details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>宮崎で​活動して、​出会いの​数は​足りますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">IBJは​全国約11万人の​ネットワークです。​お住まいの​地域に​関わらず、​全国の​会員に​お申し込みでき、​全国の​会員から​お申し込みを​受けられます。​無料相談で、​ご希望の​条件に​合う方が​何人いるかを​画面で​ご確認いただけます。</div></details>
+<details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>宮崎県外に​住んでいますが、​入会できますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">はい、​全国どちらに​お住まいでも​ご入会いただけます。​無料相談・定期面談・​お見合いは​オンラインで​行えますので、​サポートの​内容は​県内の​方と​変わりません。​服装の​相談も​写真を​送っていただく​形で​対応しています。</div></details>
+<details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>宮崎で​活動して、​出会いの​数は​足りますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">IBJは​全国10万人以上の​会員が​登録する​ネットワークです。​お住まいの​地域に​関わらず、​全国の​会員に​お申し込みでき、​全国の​会員から​お申し込みを​受けられます。​無料相談で、​ご希望の​条件に​合う方が​何人いるかを​画面で​ご確認いただけます。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>知人に​活動を​知られたく​ありません。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">プロフィールは​IBJの​会員のみが​閲覧でき、​検索エンジンには​表示されません。​写真の​公開範囲を​限定する​こともできます。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>どの​くらいの​期間で​結婚できますか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">IBJ全体では、​ご入会から​ご成婚までの​平均は​約1年です。​ルーモでも​1年以内を​目安に​計画を​立てますが、​活動の​ペースや​ご希望の​条件に​よっては、​3か​月ほどで​ご成婚される​方も​います。​個人差が​あり、​結婚を​お約束する​ものではありません。</div></details>
 <details><summary style="word-break:keep-all;overflow-wrap:anywhere"><span class="ms">help</span>どの​プランを​選べば​よいですか。</summary><div class="a" style="word-break:keep-all;overflow-wrap:anywhere">多くの​方には​スタンダードを​おすすめしています。​費用を​抑えて​始めたい​20代の​方は​20代応援プラン、​第一印象や​交際の​サポートまで​手厚く​伴走してほしい​方は​プレミアムを​ご検討ください。​無料相談で、​ご希望に​合わせて​ご案内します。</div></details>
@@ -954,14 +1039,15 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <div class="wrap">
 <div class="sh">
 <span class="k">対応エリア</span>
-<h2 style="word-break:keep-all;overflow-wrap:anywhere">宮崎県全域の​方の​活動を​支えています。</h2>
+<h2 style="word-break:keep-all;overflow-wrap:anywhere"><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">宮崎県を​​拠点に、</span><span class="l" style="word-break:keep-all;overflow-wrap:anywhere">全国の​​方の​​活動を​​支えています。</span></h2>
+<p class="lead" style="word-break:keep-all;overflow-wrap:anywhere">面談・​お見合い・ご相談は​すべて​オンラインで​完結できます。​お住まいの​地域に​関わらず、​同じ​内容の​サポートを​お受けいただけます。</p>
 </div>
 <div class="area">
 <div class="img"><img alt="対応エリアの地図" src="images/area-map.png"/></div>
 <ul>
-<li><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">map</span><b>対応エリア</b><span style="word-break:keep-all;overflow-wrap:anywhere">宮崎県全域​（オンラインで​面談・​お見合いに​対応）</span></li>
+<li><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">map</span><b>対応エリア</b><span style="word-break:keep-all;overflow-wrap:anywhere">全国​（宮崎県内は​対面・オンラインの​両方、​県外は​オンライン）</span></li>
 <li><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">meeting_room</span><b>対面での面談</b><span style="word-break:keep-all;overflow-wrap:anywhere">都城市周辺の​個室スペースにて​（ご予約時に​ご案内）</span></li>
-<li><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">videocam</span><b>県外の方</b><span style="word-break:keep-all;overflow-wrap:anywhere">鹿児島県・熊本県の​方も​オンラインで​ご相談いただけます</span></li>
+<li><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">videocam</span><b>県外の方</b><span style="word-break:keep-all;overflow-wrap:anywhere">九州各県は​もちろん、​関東・関西など​全国どちらに​お住まいでも、​入会から​成婚まで​オンラインで​活動いただけます</span></li>
 <li><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">location_on</span><b>所在地</b><span style="word-break:keep-all;overflow-wrap:anywhere">宮崎県都城市○○町○-○​（開業時に​記載）</span></li>
 <li><span class="ms" style="word-break:keep-all;overflow-wrap:anywhere">workspace_premium</span><b>加盟連盟</b><span style="word-break:keep-all;overflow-wrap:anywhere">IBJ​（日本結婚​相談所連盟）​正規加盟店</span></li>
 </ul>
@@ -1006,7 +1092,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </div>
 <div class="f"><label>ご希望の日時・形式（任意）</label><input name="when" placeholder="例：来週の土曜午後、オンライン希望" type="text"/></div>
 <button class="btn btn-primary" type="submit">無料相談を申し込む</button>
-<p class="privacy">ご入力いただいた情報は、無料相談のご案内にのみ使用します。<a href="#">プライバシーポリシー</a></p>
+<p class="privacy">ご入力いただいた情報は、無料相談のご案内にのみ使用します。<a href="privacy.html" rel="noopener" target="_blank">プライバシーポリシー</a></p>
 </form>
 </div>
 </section>
@@ -1014,7 +1100,7 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 <footer>
 <div class="wrap">
 <div>
-<a class="logo" href="#top"><img alt="" src="images/logo-white.png"/><span class="txt">ルーモ結婚相談所<small>IBJ正規加盟店｜宮崎県</small></span></a>
+<a class="logo" href="#top"><img alt="ルーモ結婚相談所" src="images/logo-white.png"/><span class="txt">ルーモ結婚相談所<small>IBJ正規加盟店｜宮崎県</small></span></a>
 <p style="margin-top:16px;word-break:keep-all;overflow-wrap:anywhere">宮崎県都城市○○町○-○​（開業時に​記載）<br/>IBJ​（日本結婚​相談所連盟）​正規加盟店<br/>営業時間：平日 19:00〜22:00 ／ 土日 10:00〜18:00</p>
 </div>
 <div>
@@ -1023,9 +1109,9 @@ footer .copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding
 </div>
 <div>
 <h4>ご案内</h4>
-<ul><li><a href="#">運営者情報</a></li><li><a href="#">特定商取引法に基づく表記</a></li><li><a href="#">プライバシーポリシー</a></li><li><a href="#">勧誘方針・クーリングオフ</a></li><li><a href="#">Instagram</a></li></ul>
+<ul><li><a href="company.html">運営者情報</a></li><li><a href="tokushoho.html">特定商取引法に基づく表記</a></li><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="policy.html">勧誘方針・クーリングオフ</a></li><li><a href="https://www.instagram.com/XXXXXXX" rel="noopener" target="_blank">Instagram</a></li></ul>
 </div>
-<div class="copy">© 2027 ルーモ結婚相談所</div>
+<div class="copy">© 2026 ルーモ結婚相談所</div>
 </div>
 </footer>
 <div class="sticky">
